@@ -9,6 +9,8 @@ import UIKit
 
 final class ResultDetailView: UIView {
 
+    var index = 0
+
     // MARK: UI Component
     private let resultStackView = UIStackView().then {
         $0.axis = .vertical
@@ -51,7 +53,7 @@ final class ResultDetailView: UIView {
 
     func setData(frushResponseDataList: [FrushResponse]) {
         for frushResponseData in frushResponseDataList {
-            var index = 0
+
             let fruit = frushResponseData.fruit
             let similarity = frushResponseData.similarity
 
