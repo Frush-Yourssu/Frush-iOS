@@ -69,7 +69,7 @@ final class ResultView: BaseView {
         }
 
         resultDetailView.snp.makeConstraints {
-            $0.top.equalTo(descriptLabel.snp.bottom).offset(20)
+            $0.top.equalTo(descriptLabel.snp.bottom).offset(25)
             $0.width.equalToSuperview()
         }
     }
