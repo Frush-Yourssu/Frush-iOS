@@ -16,11 +16,21 @@ final class LoadingViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setNavigationItem()
+
+        router.viewController = self
     }
+
+    // MARK: Environment
+    private let router = BaseRouter()
 
     // MARK: Configuration
     override func configureSubviews() {
         view.addSubview(loadingView)
+
+        loadingView.tapNextButton = { [weak self] in
+            guard let self else { return }
+            router.presentResultViewController()
+        }
     }
 
     // MARK: Layout
