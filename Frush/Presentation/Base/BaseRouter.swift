@@ -38,8 +38,8 @@ final class BaseRouter {
         viewController?.navigationController?.pushViewController(thirdStepViewController, animated: true)
     }
 
-    func presentCameraViewController(category: String, step: Int) {
-        let cameraViewController = CameraViewController(category: category, step: step)
+    func presentCameraViewController(category: String, step: Int, layerImage: UIImage) {
+        let cameraViewController = CameraViewController(category: category, step: step, layerImage: layerImage)
         viewController?.navigationController?.pushViewController(cameraViewController, animated: true)
     }
 

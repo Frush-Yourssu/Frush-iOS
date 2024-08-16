@@ -56,11 +56,11 @@ final class ThirdStepViewController: BaseViewController {
             print("3rewafa")
             switch frushImage {
             case FrushImage.waterMelonStep3:
-                router.presentCameraViewController(category: "waterMelon", step: 3)
+                router.presentCameraViewController(category: "waterMelon", step: 3, layerImage: FrushImage.waterMelonLayer2)
             case FrushImage.koreanMelonStep3:
-                router.presentCameraViewController(category: "koreanMelon", step: 3)
+                router.presentCameraViewController(category: "koreanMelon", step: 3, layerImage: FrushImage.koreanMelonLayer1)
             case FrushImage.peachStep3:
-                router.presentCameraViewController(category: "peach", step: 3)
+                router.presentCameraViewController(category: "peach", step: 3, layerImage: FrushImage.peachLayer1)
             default:
                 return
             }
