@@ -19,6 +19,7 @@ public enum FrushImage {
 
 public enum FrushButton {
     public static var backButton: UIImage { .load(name: "back_button") }
+    public static var dismissButton: UIImage { .load(name: "dismiss_button") }
 }
 
 public enum FrushIcon {
