@@ -57,28 +57,31 @@ final class ResultDetailView: UIView {
 
             switch fruit {
             case "WATER_MELON":
+                print("dfsaadfs")
+                print(index)
                 let resultContentView = ResultContentView(
                     category: WaterMelonData.waterMelonDataList[index].category,
                     similarity: similarity)
 
                 resultStackView.addArrangedSubview(resultContentView)
+                index += 1
             case "ORIENTAL_MELON":
                 let resultContentView = ResultContentView(
                     category: WaterMelonData.koreanMelonDataList[index].category,
                     similarity: similarity)
 
                 resultStackView.addArrangedSubview(resultContentView)
+                index += 1
             case "PEACH":
                 let resultContentView = ResultContentView(
                     category: WaterMelonData.peachMelonDataList[index].category,
                     similarity: similarity)
 
                 resultStackView.addArrangedSubview(resultContentView)
+                index += 1
             default:
                 return
             }
-
-            index += 1
         }
     }
 }
