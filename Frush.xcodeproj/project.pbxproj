@@ -47,6 +47,7 @@
 		9536514C2C6F7AFA00F58D13 /* SecondStepViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9536514B2C6F7AFA00F58D13 /* SecondStepViewController.swift */; };
 		9536514E2C6F7B0000F58D13 /* ThirdStepView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9536514D2C6F7B0000F58D13 /* ThirdStepView.swift */; };
 		953651502C6F7B0900F58D13 /* ThirdStepViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9536514F2C6F7B0900F58D13 /* ThirdStepViewController.swift */; };
+		953651522C6F885D00F58D13 /* UIStackView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953651512C6F885D00F58D13 /* UIStackView+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -85,6 +86,7 @@
 		9536514B2C6F7AFA00F58D13 /* SecondStepViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondStepViewController.swift; sourceTree = "<group>"; };
 		9536514D2C6F7B0000F58D13 /* ThirdStepView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdStepView.swift; sourceTree = "<group>"; };
 		9536514F2C6F7B0900F58D13 /* ThirdStepViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdStepViewController.swift; sourceTree = "<group>"; };
+		953651512C6F885D00F58D13 /* UIStackView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,6 +178,7 @@
 			isa = PBXGroup;
 			children = (
 				9536513E2C6F762F00F58D13 /* UIColor+Extension.swift */,
+				953651512C6F885D00F58D13 /* UIStackView+Extension.swift */,
 				953651402C6F763700F58D13 /* UIButton+Extension.swift */,
 				953651372C6F73F900F58D13 /* Literal */,
 			);
@@ -403,6 +406,7 @@
 				9536513F2C6F762F00F58D13 /* UIColor+Extension.swift in Sources */,
 				953651232C6F6CCD00F58D13 /* KoreanMelonView.swift in Sources */,
 				953651502C6F7B0900F58D13 /* ThirdStepViewController.swift in Sources */,
+				953651522C6F885D00F58D13 /* UIStackView+Extension.swift in Sources */,
 				953650DA2C6F624F00F58D13 /* AppDelegate.swift in Sources */,
 				953651482C6F7AED00F58D13 /* FirstStepViewController.swift in Sources */,
 				953651212C6F6CC200F58D13 /* PeachViewController.swift in Sources */,
