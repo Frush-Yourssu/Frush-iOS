@@ -11,9 +11,11 @@ final class WaterMelonView: BaseView {
 
     // MARK: UI Components
     private let guideLabel = UILabel().then {
-        $0.text = "맛있는 수박을 고르러 가볼까요?"
-        $0.textColor = .black
-        $0.font = UIFont.systemFont(ofSize: 20, weight: .bold)
+        $0.setDefaultLabel("맛있는 수박을 고르러 가볼까요?")
+    }
+
+    private let waterMelonImageView = UIImageView().then {
+        $0.image = FrushImage.waterMelon
     }
 
     private let startButton = BaseButton().then {
@@ -26,6 +28,7 @@ final class WaterMelonView: BaseView {
     // MARK: Configuration
     override func configureSubviews() {
         addSubview(guideLabel)
+        addSubview(waterMelonImageView)
         addSubview(startButton)
 
         startButton.addTarget(self, action: #selector(handleStartButtonEvent), for: .touchUpInside)
@@ -34,8 +37,14 @@ final class WaterMelonView: BaseView {
     // MARK: Layout
     override func makeConstraints() {
         guideLabel.snp.makeConstraints {
-            $0.top.equalTo(safeAreaLayoutGuide).inset(50)
+            $0.top.equalTo(safeAreaLayoutGuide).inset(137)
             $0.centerX.equalToSuperview()
+        }
+
+        waterMelonImageView.snp.makeConstraints {
+            $0.top.equalTo(guideLabel.snp.bottom).offset(36)
+            $0.centerX.equalToSuperview()
+            $0.height.width.equalTo(300)
         }
 
         startButton.snp.makeConstraints {
