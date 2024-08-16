@@ -41,6 +41,12 @@
 		953651392C6F740100F58D13 /* ImageLiteral.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953651382C6F740100F58D13 /* ImageLiteral.swift */; };
 		9536513F2C6F762F00F58D13 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9536513E2C6F762F00F58D13 /* UIColor+Extension.swift */; };
 		953651412C6F763700F58D13 /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953651402C6F763700F58D13 /* UIButton+Extension.swift */; };
+		953651462C6F7AE600F58D13 /* FirstStepView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953651452C6F7AE600F58D13 /* FirstStepView.swift */; };
+		953651482C6F7AED00F58D13 /* FirstStepViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953651472C6F7AED00F58D13 /* FirstStepViewController.swift */; };
+		9536514A2C6F7AF300F58D13 /* SecondStepView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953651492C6F7AF300F58D13 /* SecondStepView.swift */; };
+		9536514C2C6F7AFA00F58D13 /* SecondStepViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9536514B2C6F7AFA00F58D13 /* SecondStepViewController.swift */; };
+		9536514E2C6F7B0000F58D13 /* ThirdStepView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9536514D2C6F7B0000F58D13 /* ThirdStepView.swift */; };
+		953651502C6F7B0900F58D13 /* ThirdStepViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9536514F2C6F7B0900F58D13 /* ThirdStepViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -73,6 +79,12 @@
 		953651382C6F740100F58D13 /* ImageLiteral.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLiteral.swift; sourceTree = "<group>"; };
 		9536513E2C6F762F00F58D13 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		953651402C6F763700F58D13 /* UIButton+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Extension.swift"; sourceTree = "<group>"; };
+		953651452C6F7AE600F58D13 /* FirstStepView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstStepView.swift; sourceTree = "<group>"; };
+		953651472C6F7AED00F58D13 /* FirstStepViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstStepViewController.swift; sourceTree = "<group>"; };
+		953651492C6F7AF300F58D13 /* SecondStepView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondStepView.swift; sourceTree = "<group>"; };
+		9536514B2C6F7AFA00F58D13 /* SecondStepViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondStepViewController.swift; sourceTree = "<group>"; };
+		9536514D2C6F7B0000F58D13 /* ThirdStepView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdStepView.swift; sourceTree = "<group>"; };
+		9536514F2C6F7B0900F58D13 /* ThirdStepViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdStepViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,6 +187,9 @@
 			children = (
 				953651122C6F6C5E00F58D13 /* Main */,
 				953651132C6F6C6C00F58D13 /* WaterMelon */,
+				953651422C6F7A8900F58D13 /* FirstStep */,
+				953651432C6F7ACB00F58D13 /* SecondStep */,
+				953651442C6F7ACF00F58D13 /* ThirdStep */,
 				953651152C6F6C7500F58D13 /* KoreanMelon */,
 				953651142C6F6C7100F58D13 /* Peach */,
 				953651262C6F6DCA00F58D13 /* Camera */,
@@ -264,6 +279,33 @@
 			path = Literal;
 			sourceTree = "<group>";
 		};
+		953651422C6F7A8900F58D13 /* FirstStep */ = {
+			isa = PBXGroup;
+			children = (
+				953651452C6F7AE600F58D13 /* FirstStepView.swift */,
+				953651472C6F7AED00F58D13 /* FirstStepViewController.swift */,
+			);
+			path = FirstStep;
+			sourceTree = "<group>";
+		};
+		953651432C6F7ACB00F58D13 /* SecondStep */ = {
+			isa = PBXGroup;
+			children = (
+				953651492C6F7AF300F58D13 /* SecondStepView.swift */,
+				9536514B2C6F7AFA00F58D13 /* SecondStepViewController.swift */,
+			);
+			path = SecondStep;
+			sourceTree = "<group>";
+		};
+		953651442C6F7ACF00F58D13 /* ThirdStep */ = {
+			isa = PBXGroup;
+			children = (
+				9536514D2C6F7B0000F58D13 /* ThirdStepView.swift */,
+				9536514F2C6F7B0900F58D13 /* ThirdStepViewController.swift */,
+			);
+			path = ThirdStep;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -351,6 +393,7 @@
 				953650DE2C6F624F00F58D13 /* ViewController.swift in Sources */,
 				953651172C6F6CA100F58D13 /* MainView.swift in Sources */,
 				9536511B2C6F6CAD00F58D13 /* WaterMelonView.swift in Sources */,
+				9536514E2C6F7B0000F58D13 /* ThirdStepView.swift in Sources */,
 				9536512D2C6F6E0800F58D13 /* ResultView.swift in Sources */,
 				953650F22C6F694200F58D13 /* BaseViewController.swift in Sources */,
 				953651392C6F740100F58D13 /* ImageLiteral.swift in Sources */,
@@ -359,16 +402,21 @@
 				953650F42C6F696200F58D13 /* BaseView.swift in Sources */,
 				9536513F2C6F762F00F58D13 /* UIColor+Extension.swift in Sources */,
 				953651232C6F6CCD00F58D13 /* KoreanMelonView.swift in Sources */,
+				953651502C6F7B0900F58D13 /* ThirdStepViewController.swift in Sources */,
 				953650DA2C6F624F00F58D13 /* AppDelegate.swift in Sources */,
+				953651482C6F7AED00F58D13 /* FirstStepViewController.swift in Sources */,
 				953651212C6F6CC200F58D13 /* PeachViewController.swift in Sources */,
 				9536511D2C6F6CB200F58D13 /* WaterMelonViewController.swift in Sources */,
 				953650F62C6F696E00F58D13 /* BaseButton.swift in Sources */,
 				953651412C6F763700F58D13 /* UIButton+Extension.swift in Sources */,
 				953650DC2C6F624F00F58D13 /* SceneDelegate.swift in Sources */,
+				9536514A2C6F7AF300F58D13 /* SecondStepView.swift in Sources */,
+				953651462C6F7AE600F58D13 /* FirstStepView.swift in Sources */,
 				953651282C6F6DD400F58D13 /* CameraView.swift in Sources */,
 				953650F82C6F698400F58D13 /* AppDependency.swift in Sources */,
 				9536512F2C6F6E0D00F58D13 /* ResultViewController.swift in Sources */,
 				953651112C6F6AF900F58D13 /* BaseRouter.swift in Sources */,
+				9536514C2C6F7AFA00F58D13 /* SecondStepViewController.swift in Sources */,
 				953651192C6F6CA600F58D13 /* MainViewController.swift in Sources */,
 				953651342C6F6E3F00F58D13 /* LoadingViewController.swift in Sources */,
 				9536511F2C6F6CBA00F58D13 /* PeachView.swift in Sources */,

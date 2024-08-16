@@ -33,6 +33,11 @@ final class BaseRouter {
         viewController?.navigationController?.pushViewController(peachViewController, animated: true)
     }
 
+    func presentFirstStepViewController() {
+        let firstStepViewController = FirstStepViewController()
+        viewController?.navigationController?.pushViewController(firstStepViewController, animated: true)
+    }
+
     func dismissViewController() {
         viewController?.navigationController?.popViewController(animated: true)
     }
