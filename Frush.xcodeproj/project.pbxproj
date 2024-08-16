@@ -43,7 +43,7 @@
 		9536515E2C6F9BBC00F58D13 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 9536515D2C6F9BBC00F58D13 /* SnapKit */; };
 		95778AFD2C6FB0A7004BB616 /* DummyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95778AFC2C6FB0A7004BB616 /* DummyData.swift */; };
 		95778AFF2C6FB0D0004BB616 /* ResultContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95778AFE2C6FB0D0004BB616 /* ResultContentView.swift */; };
-		95778B012C6FB0E3004BB616 /* ResultStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95778B002C6FB0E3004BB616 /* ResultStackView.swift */; };
+		95778B012C6FB0E3004BB616 /* ResultDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95778B002C6FB0E3004BB616 /* ResultDetailView.swift */; };
 		95778B072C6FB2A7004BB616 /* GmarketSansTTFBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 95778B042C6FB2A7004BB616 /* GmarketSansTTFBold.ttf */; };
 		95778B082C6FB2A7004BB616 /* GmarketSansTTFLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 95778B052C6FB2A7004BB616 /* GmarketSansTTFLight.ttf */; };
 		95778B092C6FB2A7004BB616 /* GmarketSansTTFMedium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 95778B062C6FB2A7004BB616 /* GmarketSansTTFMedium.ttf */; };
@@ -97,7 +97,7 @@
 		953651512C6F885D00F58D13 /* UIStackView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+Extension.swift"; sourceTree = "<group>"; };
 		95778AFC2C6FB0A7004BB616 /* DummyData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyData.swift; sourceTree = "<group>"; };
 		95778AFE2C6FB0D0004BB616 /* ResultContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultContentView.swift; sourceTree = "<group>"; };
-		95778B002C6FB0E3004BB616 /* ResultStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultStackView.swift; sourceTree = "<group>"; };
+		95778B002C6FB0E3004BB616 /* ResultDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultDetailView.swift; sourceTree = "<group>"; };
 		95778B042C6FB2A7004BB616 /* GmarketSansTTFBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = GmarketSansTTFBold.ttf; sourceTree = "<group>"; };
 		95778B052C6FB2A7004BB616 /* GmarketSansTTFLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = GmarketSansTTFLight.ttf; sourceTree = "<group>"; };
 		95778B062C6FB2A7004BB616 /* GmarketSansTTFMedium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = GmarketSansTTFMedium.ttf; sourceTree = "<group>"; };
@@ -272,7 +272,7 @@
 			children = (
 				9536512C2C6F6E0800F58D13 /* ResultView.swift */,
 				95778AFE2C6FB0D0004BB616 /* ResultContentView.swift */,
-				95778B002C6FB0E3004BB616 /* ResultStackView.swift */,
+				95778B002C6FB0E3004BB616 /* ResultDetailView.swift */,
 				9536512E2C6F6E0D00F58D13 /* ResultViewController.swift */,
 			);
 			path = Result;
@@ -464,7 +464,7 @@
 				953651482C6F7AED00F58D13 /* FirstStepViewController.swift in Sources */,
 				95778B312C6FE3C3004BB616 /* FrushViewController.swift in Sources */,
 				95778B122C6FBF85004BB616 /* TargetType+Extension.swift in Sources */,
-				95778B012C6FB0E3004BB616 /* ResultStackView.swift in Sources */,
+				95778B012C6FB0E3004BB616 /* ResultDetailView.swift in Sources */,
 				95778B1B2C6FBFD3004BB616 /* FrushAPI.swift in Sources */,
 				95778B0C2C6FB36A004BB616 /* UILabel+Extension.swift in Sources */,
 				953650F62C6F696E00F58D13 /* BaseButton.swift in Sources */,
@@ -625,7 +625,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = C9XX799UJH;
+				DEVELOPMENT_TEAM = 4P6BZ8CR69;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Frush/Support/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -652,7 +652,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = C9XX799UJH;
+				DEVELOPMENT_TEAM = 4P6BZ8CR69;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Frush/Support/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

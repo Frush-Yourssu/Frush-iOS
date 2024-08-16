@@ -11,23 +11,18 @@ final class ResultView: BaseView {
 
     // MARK: UI Components
     private let resultLabel = UILabel().then {
-        $0.text = "내가 고른 수박은?"
         $0.textColor = .black
         $0.font = UIFont.systemFont(ofSize: 20, weight: .bold)
     }
 
-    private let frushImageView = UIImageView().then {
-        $0.backgroundColor = .lightGray
-    }
+    private let frushImageView = UIImageView()
 
     private let frushTitleLabel = UILabel().then {
-        $0.text = "맛없는 수박"
         $0.textColor = .black
         $0.font = UIFont.systemFont(ofSize: 18, weight: .bold)
     }
 
     private let descriptLabel = UILabel().then {
-        $0.text = "달콤함을 기대하지 마세요.. 씁쓸할 거에요."
         $0.textColor = .black
         $0.font = UIFont.systemFont(ofSize: 16, weight: .medium)
     }
@@ -39,7 +34,7 @@ final class ResultView: BaseView {
 
     // MARK: Configuration
     override func configureSubviews() {
-        resultDetailView.setData(waterMelonDataList: waterMelonDataList)
+        resultDetailView.setData(frushResponseDataList: FrushRealData.frushRealDataList)
 
         addSubview(resultLabel)
         addSubview(frushImageView)
@@ -72,7 +67,7 @@ final class ResultView: BaseView {
         }
 
         resultDetailView.snp.makeConstraints {
-            $0.top.equalTo(descriptLabel.snp.bottom).offset(12)
+            $0.top.equalTo(descriptLabel.snp.bottom).offset(20)
             $0.width.equalToSuperview()
         }
     }

@@ -32,7 +32,7 @@ final class CameraViewController: BaseViewController {
     }()
 
     private let guideLabel = UILabel().then {
-        $0.setDefaultLabel("가이드 맞춰 촬영해주세요!")
+        $0.setDefaultLabel("가이드에 맞춰 촬영해주세요!")
     }
 
     // MARK: Environment

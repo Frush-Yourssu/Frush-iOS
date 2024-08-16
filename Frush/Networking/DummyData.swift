@@ -18,6 +18,18 @@ extension WaterMelonData {
         WaterMelonData(category: "모양", similarity: 50),
         WaterMelonData(category: "줄무늬", similarity: 70)
     ]
+
+    static let koreanMelonDataList = [
+        WaterMelonData(category: "배꼽", similarity: 30),
+        WaterMelonData(category: "타원형", similarity: 50),
+        WaterMelonData(category: "상처", similarity: 70)
+    ]
+
+    static let peachMelonDataList = [
+        WaterMelonData(category: "붉은", similarity: 30),
+        WaterMelonData(category: "골", similarity: 50),
+        WaterMelonData(category: "상처", similarity: 70)
+    ]
 }
 
 struct FruitData {
