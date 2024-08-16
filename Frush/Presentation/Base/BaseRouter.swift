@@ -17,4 +17,19 @@ final class BaseRouter {
         someViewController.view.backgroundColor = .white
         viewController?.present(someViewController, animated: true)
     }
+
+    func presentWaterMelonViewController() {
+        let waterMelonViewController = WaterMelonViewController()
+        viewController?.navigationController?.pushViewController(waterMelonViewController, animated: true)
+    }
+
+    func presentKoreanMelonViewController() {
+        let koreanMelonViewController = KoreanMelonViewController()
+        viewController?.navigationController?.pushViewController(koreanMelonViewController, animated: true)
+    }
+
+    func presentPeachViewController() {
+        let peachViewController = PeachViewController()
+        viewController?.navigationController?.pushViewController(peachViewController, animated: true)
+    }
 }

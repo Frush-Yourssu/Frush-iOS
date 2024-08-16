@@ -14,6 +14,7 @@ final class PeachViewController: BaseViewController {
     // MARK: Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        setNavigationItem()
     }
 
     // MARK: Configuration
@@ -22,5 +23,10 @@ final class PeachViewController: BaseViewController {
 
     // MARK: Layout
     override func makeConstraints() {
+    }
+
+    // MARK: Navigation Item
+    private func setNavigationItem() {
+        navigationItem.title = "복숭아"
     }
 }
