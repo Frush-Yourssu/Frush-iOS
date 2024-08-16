@@ -64,6 +64,8 @@
 		95778B1D2C6FC025004BB616 /* FrushService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95778B1C2C6FC025004BB616 /* FrushService.swift */; };
 		95778B1F2C6FC02B004BB616 /* FrushResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95778B1E2C6FC02B004BB616 /* FrushResponse.swift */; };
 		95778B272C6FD8D4004BB616 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95778B262C6FD8D4004BB616 /* UIImage+Extension.swift */; };
+		95778B2A2C6FE147004BB616 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 95778B292C6FE147004BB616 /* Lottie */; };
+		95778B2C2C6FE15D004BB616 /* loading_animation.json in Resources */ = {isa = PBXBuildFile; fileRef = 95778B2B2C6FE15D004BB616 /* loading_animation.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -120,6 +122,7 @@
 		95778B1C2C6FC025004BB616 /* FrushService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrushService.swift; sourceTree = "<group>"; };
 		95778B1E2C6FC02B004BB616 /* FrushResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrushResponse.swift; sourceTree = "<group>"; };
 		95778B262C6FD8D4004BB616 /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
+		95778B2B2C6FE15D004BB616 /* loading_animation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = loading_animation.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +131,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				953650FB2C6F69D200F58D13 /* Then in Frameworks */,
+				95778B2A2C6FE147004BB616 /* Lottie in Frameworks */,
 				953651032C6F6A0100F58D13 /* CombineMoya in Frameworks */,
 				953651052C6F6A0100F58D13 /* Moya in Frameworks */,
 				9536515E2C6F9BBC00F58D13 /* SnapKit in Frameworks */,
@@ -203,6 +207,7 @@
 			children = (
 				95778B0A2C6FB2AB004BB616 /* Font */,
 				953650E22C6F625100F58D13 /* Assets.xcassets */,
+				95778B2B2C6FE15D004BB616 /* loading_animation.json */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -397,6 +402,7 @@
 				953651062C6F6A0100F58D13 /* ReactiveMoya */,
 				953651082C6F6A0100F58D13 /* RxMoya */,
 				9536515D2C6F9BBC00F58D13 /* SnapKit */,
+				95778B292C6FE147004BB616 /* Lottie */,
 			);
 			productName = Frush;
 			productReference = 953650D62C6F624F00F58D13 /* Frush.app */;
@@ -430,6 +436,7 @@
 				953650F92C6F69D200F58D13 /* XCRemoteSwiftPackageReference "Then" */,
 				953651012C6F6A0100F58D13 /* XCRemoteSwiftPackageReference "Moya" */,
 				9536515C2C6F9BBC00F58D13 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				95778B282C6FE147004BB616 /* XCRemoteSwiftPackageReference "lottie-spm" */,
 			);
 			productRefGroup = 953650D72C6F624F00F58D13 /* Products */;
 			projectDirPath = "";
@@ -450,6 +457,7 @@
 				953650E32C6F625100F58D13 /* Assets.xcassets in Resources */,
 				95778B072C6FB2A7004BB616 /* GmarketSansTTFBold.ttf in Resources */,
 				95778B092C6FB2A7004BB616 /* GmarketSansTTFMedium.ttf in Resources */,
+				95778B2C2C6FE15D004BB616 /* loading_animation.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -744,6 +752,14 @@
 				minimumVersion = 5.7.1;
 			};
 		};
+		95778B282C6FE147004BB616 /* XCRemoteSwiftPackageReference "lottie-spm" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-spm.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.5.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -776,6 +792,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 9536515C2C6F9BBC00F58D13 /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = SnapKit;
+		};
+		95778B292C6FE147004BB616 /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 95778B282C6FE147004BB616 /* XCRemoteSwiftPackageReference "lottie-spm" */;
+			productName = Lottie;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
