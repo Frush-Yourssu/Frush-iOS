@@ -32,6 +32,12 @@
 		953651212C6F6CC200F58D13 /* PeachViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953651202C6F6CC200F58D13 /* PeachViewController.swift */; };
 		953651232C6F6CCD00F58D13 /* KoreanMelonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953651222C6F6CCD00F58D13 /* KoreanMelonView.swift */; };
 		953651252C6F6CD300F58D13 /* KoreanMelonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953651242C6F6CD300F58D13 /* KoreanMelonViewController.swift */; };
+		953651282C6F6DD400F58D13 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953651272C6F6DD400F58D13 /* CameraView.swift */; };
+		9536512A2C6F6DDA00F58D13 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953651292C6F6DDA00F58D13 /* CameraViewController.swift */; };
+		9536512D2C6F6E0800F58D13 /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9536512C2C6F6E0800F58D13 /* ResultView.swift */; };
+		9536512F2C6F6E0D00F58D13 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9536512E2C6F6E0D00F58D13 /* ResultViewController.swift */; };
+		953651322C6F6E3700F58D13 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953651312C6F6E3700F58D13 /* LoadingView.swift */; };
+		953651342C6F6E3F00F58D13 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953651332C6F6E3F00F58D13 /* LoadingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,6 +61,12 @@
 		953651202C6F6CC200F58D13 /* PeachViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeachViewController.swift; sourceTree = "<group>"; };
 		953651222C6F6CCD00F58D13 /* KoreanMelonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KoreanMelonView.swift; sourceTree = "<group>"; };
 		953651242C6F6CD300F58D13 /* KoreanMelonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KoreanMelonViewController.swift; sourceTree = "<group>"; };
+		953651272C6F6DD400F58D13 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
+		953651292C6F6DDA00F58D13 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		9536512C2C6F6E0800F58D13 /* ResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultView.swift; sourceTree = "<group>"; };
+		9536512E2C6F6E0D00F58D13 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		953651312C6F6E3700F58D13 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		953651332C6F6E3F00F58D13 /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,6 +168,9 @@
 				953651132C6F6C6C00F58D13 /* WaterMelon */,
 				953651142C6F6C7100F58D13 /* Peach */,
 				953651152C6F6C7500F58D13 /* KoreanMelon */,
+				953651262C6F6DCA00F58D13 /* Camera */,
+				953651302C6F6E2D00F58D13 /* Loading */,
+				9536512B2C6F6DFF00F58D13 /* Result */,
 				953650DD2C6F624F00F58D13 /* ViewController.swift */,
 				953650F02C6F692F00F58D13 /* Base */,
 			);
@@ -203,6 +218,33 @@
 				953651242C6F6CD300F58D13 /* KoreanMelonViewController.swift */,
 			);
 			path = KoreanMelon;
+			sourceTree = "<group>";
+		};
+		953651262C6F6DCA00F58D13 /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				953651272C6F6DD400F58D13 /* CameraView.swift */,
+				953651292C6F6DDA00F58D13 /* CameraViewController.swift */,
+			);
+			path = Camera;
+			sourceTree = "<group>";
+		};
+		9536512B2C6F6DFF00F58D13 /* Result */ = {
+			isa = PBXGroup;
+			children = (
+				9536512C2C6F6E0800F58D13 /* ResultView.swift */,
+				9536512E2C6F6E0D00F58D13 /* ResultViewController.swift */,
+			);
+			path = Result;
+			sourceTree = "<group>";
+		};
+		953651302C6F6E2D00F58D13 /* Loading */ = {
+			isa = PBXGroup;
+			children = (
+				953651312C6F6E3700F58D13 /* LoadingView.swift */,
+				953651332C6F6E3F00F58D13 /* LoadingViewController.swift */,
+			);
+			path = Loading;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -292,7 +334,9 @@
 				953650DE2C6F624F00F58D13 /* ViewController.swift in Sources */,
 				953651172C6F6CA100F58D13 /* MainView.swift in Sources */,
 				9536511B2C6F6CAD00F58D13 /* WaterMelonView.swift in Sources */,
+				9536512D2C6F6E0800F58D13 /* ResultView.swift in Sources */,
 				953650F22C6F694200F58D13 /* BaseViewController.swift in Sources */,
+				953651322C6F6E3700F58D13 /* LoadingView.swift in Sources */,
 				953651252C6F6CD300F58D13 /* KoreanMelonViewController.swift in Sources */,
 				953650F42C6F696200F58D13 /* BaseView.swift in Sources */,
 				953651232C6F6CCD00F58D13 /* KoreanMelonView.swift in Sources */,
@@ -301,10 +345,14 @@
 				9536511D2C6F6CB200F58D13 /* WaterMelonViewController.swift in Sources */,
 				953650F62C6F696E00F58D13 /* BaseButton.swift in Sources */,
 				953650DC2C6F624F00F58D13 /* SceneDelegate.swift in Sources */,
+				953651282C6F6DD400F58D13 /* CameraView.swift in Sources */,
 				953650F82C6F698400F58D13 /* AppDependency.swift in Sources */,
+				9536512F2C6F6E0D00F58D13 /* ResultViewController.swift in Sources */,
 				953651112C6F6AF900F58D13 /* BaseRouter.swift in Sources */,
 				953651192C6F6CA600F58D13 /* MainViewController.swift in Sources */,
+				953651342C6F6E3F00F58D13 /* LoadingViewController.swift in Sources */,
 				9536511F2C6F6CBA00F58D13 /* PeachView.swift in Sources */,
+				9536512A2C6F6DDA00F58D13 /* CameraViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
