@@ -27,6 +27,10 @@ final class CameraViewController: BaseViewController {
         return overlayView
     }()
 
+    private let guideLabel = UILabel().then {
+        $0.setDefaultLabel("가이드 맞춰 촬영해주세요!")
+    }
+
     // MARK: Environment
     private let router = BaseRouter()
 
@@ -87,6 +91,8 @@ final class CameraViewController: BaseViewController {
 
 
                 pickerController.view.addSubview(self!.overlayView)
+                pickerController.view.addSubview(self!.guideLabel)
+
 
                 if(self?.category == "koreanMelon"){
                     self?.overlayView.snp.makeConstraints {
@@ -99,6 +105,11 @@ final class CameraViewController: BaseViewController {
                         $0.center.equalToSuperview()
                         $0.width.height.equalTo(300)
                     }
+                }
+
+                self?.guideLabel.snp.makeConstraints {
+                    $0.centerX.equalToSuperview()
+                    $0.top.equalToSuperview().inset(179)
                 }
 
                 self?.overlayView.isHidden = false
