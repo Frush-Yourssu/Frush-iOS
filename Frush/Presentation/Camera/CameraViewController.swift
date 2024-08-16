@@ -7,6 +7,7 @@
 
 import UIKit
 import AVFoundation
+import Moya
 
 final class CameraViewController: BaseViewController {
 
@@ -118,8 +119,38 @@ extension CameraViewController: UINavigationControllerDelegate, UIImagePickerCon
             return
         }
 
+        let encodedImage = image.base64
+        postFruit(fruit: "WATER_MELON",
+                  fruitPart: "WATER_MELON_CIRCULAR",
+                  image: encodedImage)
 
-        picker.dismiss(animated: true, completion: nil)
         router.presentSecondStepViewController()
+    }
+}
+
+// MARK: Networking
+extension CameraViewController {
+    private func postFruit(fruit: String, fruitPart: String, image: String) {
+        print("🍉 postFruit called")
+        NetworkService.shared.frush.postFruit(fruit: fruit,
+                                              fruitPart: fruitPart,
+                                              image: image)
+        { result in
+            switch result {
+            case .success(let response):
+                guard let data = response as? FrushResponse else { return }
+                print("🍉 postFruit success: " + "\(data)")
+            case .requestErr(let errorResponse):
+                dump(errorResponse)
+                guard let data = errorResponse as? ErrorResponse else { return }
+                print(data)
+            case .serverErr:
+                print("serverErr")
+            case .networkFail:
+                print("networkFail")
+            case .pathErr:
+                print("pathErr")
+            }
+        }
     }
 }
