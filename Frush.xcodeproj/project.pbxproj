@@ -24,6 +24,14 @@
 		953651072C6F6A0100F58D13 /* ReactiveMoya in Frameworks */ = {isa = PBXBuildFile; productRef = 953651062C6F6A0100F58D13 /* ReactiveMoya */; };
 		953651092C6F6A0100F58D13 /* RxMoya in Frameworks */ = {isa = PBXBuildFile; productRef = 953651082C6F6A0100F58D13 /* RxMoya */; };
 		953651112C6F6AF900F58D13 /* BaseRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953651102C6F6AF900F58D13 /* BaseRouter.swift */; };
+		953651172C6F6CA100F58D13 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953651162C6F6CA100F58D13 /* MainView.swift */; };
+		953651192C6F6CA600F58D13 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953651182C6F6CA600F58D13 /* MainViewController.swift */; };
+		9536511B2C6F6CAD00F58D13 /* WaterMelonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9536511A2C6F6CAD00F58D13 /* WaterMelonView.swift */; };
+		9536511D2C6F6CB200F58D13 /* WaterMelonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9536511C2C6F6CB200F58D13 /* WaterMelonViewController.swift */; };
+		9536511F2C6F6CBA00F58D13 /* PeachView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9536511E2C6F6CBA00F58D13 /* PeachView.swift */; };
+		953651212C6F6CC200F58D13 /* PeachViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953651202C6F6CC200F58D13 /* PeachViewController.swift */; };
+		953651232C6F6CCD00F58D13 /* KoreanMelonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953651222C6F6CCD00F58D13 /* KoreanMelonView.swift */; };
+		953651252C6F6CD300F58D13 /* KoreanMelonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953651242C6F6CD300F58D13 /* KoreanMelonViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +47,14 @@
 		953650F52C6F696E00F58D13 /* BaseButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseButton.swift; sourceTree = "<group>"; };
 		953650F72C6F698400F58D13 /* AppDependency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDependency.swift; sourceTree = "<group>"; };
 		953651102C6F6AF900F58D13 /* BaseRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRouter.swift; sourceTree = "<group>"; };
+		953651162C6F6CA100F58D13 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		953651182C6F6CA600F58D13 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		9536511A2C6F6CAD00F58D13 /* WaterMelonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterMelonView.swift; sourceTree = "<group>"; };
+		9536511C2C6F6CB200F58D13 /* WaterMelonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterMelonViewController.swift; sourceTree = "<group>"; };
+		9536511E2C6F6CBA00F58D13 /* PeachView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeachView.swift; sourceTree = "<group>"; };
+		953651202C6F6CC200F58D13 /* PeachViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeachViewController.swift; sourceTree = "<group>"; };
+		953651222C6F6CCD00F58D13 /* KoreanMelonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KoreanMelonView.swift; sourceTree = "<group>"; };
+		953651242C6F6CD300F58D13 /* KoreanMelonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KoreanMelonViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +152,10 @@
 		9536510E2C6F6AB500F58D13 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				953651122C6F6C5E00F58D13 /* Main */,
+				953651132C6F6C6C00F58D13 /* WaterMelon */,
+				953651142C6F6C7100F58D13 /* Peach */,
+				953651152C6F6C7500F58D13 /* KoreanMelon */,
 				953650DD2C6F624F00F58D13 /* ViewController.swift */,
 				953650F02C6F692F00F58D13 /* Base */,
 			);
@@ -147,6 +167,42 @@
 			children = (
 			);
 			path = Networking;
+			sourceTree = "<group>";
+		};
+		953651122C6F6C5E00F58D13 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				953651162C6F6CA100F58D13 /* MainView.swift */,
+				953651182C6F6CA600F58D13 /* MainViewController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		953651132C6F6C6C00F58D13 /* WaterMelon */ = {
+			isa = PBXGroup;
+			children = (
+				9536511A2C6F6CAD00F58D13 /* WaterMelonView.swift */,
+				9536511C2C6F6CB200F58D13 /* WaterMelonViewController.swift */,
+			);
+			path = WaterMelon;
+			sourceTree = "<group>";
+		};
+		953651142C6F6C7100F58D13 /* Peach */ = {
+			isa = PBXGroup;
+			children = (
+				9536511E2C6F6CBA00F58D13 /* PeachView.swift */,
+				953651202C6F6CC200F58D13 /* PeachViewController.swift */,
+			);
+			path = Peach;
+			sourceTree = "<group>";
+		};
+		953651152C6F6C7500F58D13 /* KoreanMelon */ = {
+			isa = PBXGroup;
+			children = (
+				953651222C6F6CCD00F58D13 /* KoreanMelonView.swift */,
+				953651242C6F6CD300F58D13 /* KoreanMelonViewController.swift */,
+			);
+			path = KoreanMelon;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,13 +290,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				953650DE2C6F624F00F58D13 /* ViewController.swift in Sources */,
+				953651172C6F6CA100F58D13 /* MainView.swift in Sources */,
+				9536511B2C6F6CAD00F58D13 /* WaterMelonView.swift in Sources */,
 				953650F22C6F694200F58D13 /* BaseViewController.swift in Sources */,
+				953651252C6F6CD300F58D13 /* KoreanMelonViewController.swift in Sources */,
 				953650F42C6F696200F58D13 /* BaseView.swift in Sources */,
+				953651232C6F6CCD00F58D13 /* KoreanMelonView.swift in Sources */,
 				953650DA2C6F624F00F58D13 /* AppDelegate.swift in Sources */,
+				953651212C6F6CC200F58D13 /* PeachViewController.swift in Sources */,
+				9536511D2C6F6CB200F58D13 /* WaterMelonViewController.swift in Sources */,
 				953650F62C6F696E00F58D13 /* BaseButton.swift in Sources */,
 				953650DC2C6F624F00F58D13 /* SceneDelegate.swift in Sources */,
 				953650F82C6F698400F58D13 /* AppDependency.swift in Sources */,
 				953651112C6F6AF900F58D13 /* BaseRouter.swift in Sources */,
+				953651192C6F6CA600F58D13 /* MainViewController.swift in Sources */,
+				9536511F2C6F6CBA00F58D13 /* PeachView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
