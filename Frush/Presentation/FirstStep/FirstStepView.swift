@@ -18,6 +18,10 @@ final class FirstStepView: BaseView {
         $0.setDefaultLabel("배꼽이 작을수록 맛있다!")
     }
 
+    private let waterMelonImageView = UIImageView().then {
+        $0.image = FrushImage.waterMelonStep1
+    }
+
     private let cameraButton = BaseButton().then {
         $0.setDefaultButton("사진찍기")
     }
@@ -28,6 +32,7 @@ final class FirstStepView: BaseView {
     // MARK: Configuration
     override func configureSubviews() {
         addSubview(progressBarImageView)
+        addSubview(waterMelonImageView)
         addSubview(guideLabel)
         addSubview(cameraButton)
 
@@ -39,6 +44,12 @@ final class FirstStepView: BaseView {
         progressBarImageView.snp.makeConstraints {
             $0.top.equalTo(safeAreaLayoutGuide).inset(12)
             $0.width.equalToSuperview()
+        }
+        
+        waterMelonImageView.snp.makeConstraints {
+            $0.top.equalTo(guideLabel.snp.bottom).offset(56)
+            $0.centerX.equalToSuperview()
+            $0.height.width.equalTo(343)
         }
 
         guideLabel.snp.makeConstraints {

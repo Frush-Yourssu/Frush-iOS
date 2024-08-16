@@ -43,9 +43,29 @@ final class BaseRouter {
         viewController?.navigationController?.pushViewController(secondStepViewController, animated: true)
     }
 
+    func presentThirdStepViewController() {
+        let thirdStepViewController = ThirdStepViewController()
+        viewController?.navigationController?.pushViewController(thirdStepViewController, animated: true)
+    }
+
     func presentCameraViewController() {
         let cameraViewController = CameraViewController()
         viewController?.navigationController?.pushViewController(cameraViewController, animated: true)
+    }
+
+    func presentCameraViewController2() {
+        let cameraViewController2 = CameraViewController2()
+        viewController?.navigationController?.pushViewController(cameraViewController2, animated: true)
+    }
+
+    func presentCameraViewController3() {
+        let cameraViewController3 = CameraViewController3()
+        viewController?.navigationController?.pushViewController(cameraViewController3, animated: true)
+    }
+
+    func presentLoadingViewController() {
+        let loadingViewController = LoadingViewController()
+        viewController?.navigationController?.pushViewController(loadingViewController, animated: true)
     }
 
     func dismissViewController() {

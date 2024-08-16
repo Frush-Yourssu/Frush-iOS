@@ -55,6 +55,8 @@
 		95778B082C6FB2A7004BB616 /* GmarketSansTTFLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 95778B052C6FB2A7004BB616 /* GmarketSansTTFLight.ttf */; };
 		95778B092C6FB2A7004BB616 /* GmarketSansTTFMedium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 95778B062C6FB2A7004BB616 /* GmarketSansTTFMedium.ttf */; };
 		95778B0C2C6FB36A004BB616 /* UILabel+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95778B0B2C6FB36A004BB616 /* UILabel+Extension.swift */; };
+		E5B2BFC02C6FCA1200B5B2EB /* CameraViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B2BFBF2C6FCA1200B5B2EB /* CameraViewController2.swift */; };
+		E5B2BFC22C6FCA9B00B5B2EB /* CameraViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B2BFC12C6FCA9B00B5B2EB /* CameraViewController3.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -102,6 +104,8 @@
 		95778B052C6FB2A7004BB616 /* GmarketSansTTFLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = GmarketSansTTFLight.ttf; sourceTree = "<group>"; };
 		95778B062C6FB2A7004BB616 /* GmarketSansTTFMedium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = GmarketSansTTFMedium.ttf; sourceTree = "<group>"; };
 		95778B0B2C6FB36A004BB616 /* UILabel+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Extension.swift"; sourceTree = "<group>"; };
+		E5B2BFBF2C6FCA1200B5B2EB /* CameraViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController2.swift; sourceTree = "<group>"; };
+		E5B2BFC12C6FCA9B00B5B2EB /* CameraViewController3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController3.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -269,6 +273,8 @@
 			children = (
 				953651272C6F6DD400F58D13 /* CameraView.swift */,
 				953651292C6F6DDA00F58D13 /* CameraViewController.swift */,
+				E5B2BFBF2C6FCA1200B5B2EB /* CameraViewController2.swift */,
+				E5B2BFC12C6FCA9B00B5B2EB /* CameraViewController3.swift */,
 			);
 			path = Camera;
 			sourceTree = "<group>";
@@ -438,6 +444,7 @@
 				953651252C6F6CD300F58D13 /* KoreanMelonViewController.swift in Sources */,
 				95778AFD2C6FB0A7004BB616 /* DummyData.swift in Sources */,
 				953650F42C6F696200F58D13 /* BaseView.swift in Sources */,
+				E5B2BFC22C6FCA9B00B5B2EB /* CameraViewController3.swift in Sources */,
 				9536513F2C6F762F00F58D13 /* UIColor+Extension.swift in Sources */,
 				953651232C6F6CCD00F58D13 /* KoreanMelonView.swift in Sources */,
 				953651502C6F7B0900F58D13 /* ThirdStepViewController.swift in Sources */,
@@ -459,6 +466,7 @@
 				953651112C6F6AF900F58D13 /* BaseRouter.swift in Sources */,
 				9536514C2C6F7AFA00F58D13 /* SecondStepViewController.swift in Sources */,
 				953651192C6F6CA600F58D13 /* MainViewController.swift in Sources */,
+				E5B2BFC02C6FCA1200B5B2EB /* CameraViewController2.swift in Sources */,
 				953651342C6F6E3F00F58D13 /* LoadingViewController.swift in Sources */,
 				9536511F2C6F6CBA00F58D13 /* PeachView.swift in Sources */,
 				9536512A2C6F6DDA00F58D13 /* CameraViewController.swift in Sources */,

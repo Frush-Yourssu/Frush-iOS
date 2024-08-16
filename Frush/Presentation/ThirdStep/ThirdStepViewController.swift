@@ -35,6 +35,11 @@ final class ThirdStepViewController: BaseViewController {
             guard let self else { return }
             router.dismissViewController()
         }
+
+        thirdStepView.tapCameraButton = { [weak self] in
+            guard let self else { return }
+            router.presentCameraViewController3()
+        }
     }
 
     // MARK: Layout

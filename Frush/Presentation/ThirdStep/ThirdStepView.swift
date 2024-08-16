@@ -18,6 +18,10 @@ final class ThirdStepView: BaseView {
         $0.setDefaultLabel("배꼽이 작을수록 맛있다!")
     }
 
+    private let waterMelonImageView = UIImageView().then {
+        $0.image = FrushImage.waterMelonStep3
+    }
+
     private let cameraButton = BaseButton().then {
         $0.setDefaultButton("사진찍기")
     }
@@ -28,6 +32,7 @@ final class ThirdStepView: BaseView {
     // MARK: Configuration
     override func configureSubviews() {
         addSubview(progressBarImageView)
+        addSubview(waterMelonImageView)
         addSubview(guideLabel)
         addSubview(cameraButton)
 
@@ -44,6 +49,12 @@ final class ThirdStepView: BaseView {
         guideLabel.snp.makeConstraints {
             $0.top.equalTo(progressBarImageView.snp.bottom).offset(40)
             $0.centerX.equalToSuperview()
+        }
+
+        waterMelonImageView.snp.makeConstraints {
+            $0.top.equalTo(guideLabel.snp.bottom).offset(56)
+            $0.centerX.equalToSuperview()
+            $0.height.width.equalTo(343)
         }
 
         cameraButton.snp.makeConstraints {
