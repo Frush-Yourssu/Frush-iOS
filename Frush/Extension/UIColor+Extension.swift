@@ -12,6 +12,10 @@ extension UIColor {
     static var frushOrange: UIColor {
         return UIColor(hex: "#FE8744")
     }
+
+    static var lightOrange: UIColor {
+        return UIColor(hex: "#FFE8D9")
+    }
 }
 
 extension UIColor {
