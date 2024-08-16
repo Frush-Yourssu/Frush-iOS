@@ -11,9 +11,11 @@ final class KoreanMelonView: BaseView {
 
     // MARK: UI Components
     private let guideLabel = UILabel().then {
-        $0.text = "맛있는 참외를 고르러 가볼까요?"
-        $0.textColor = .black
-        $0.font = UIFont.systemFont(ofSize: 20, weight: .bold)
+        $0.setDefaultLabel("맛있는 참외를 고르러 가볼까요?")
+    }
+
+    private let koreanMelonImageView = UIImageView().then {
+        $0.image = FrushImage.koreanMelon
     }
 
     private let startButton = BaseButton().then {
@@ -21,18 +23,28 @@ final class KoreanMelonView: BaseView {
     }
 
     // MARK: Properties
+    var tapStartButton: (() -> Void)?
 
     // MARK: Configuration
     override func configureSubviews() {
         addSubview(guideLabel)
+        addSubview(koreanMelonImageView)
         addSubview(startButton)
+
+        startButton.addTarget(self, action: #selector(handleStartButtonEvent), for: .touchUpInside)
     }
 
     // MARK: Layout
     override func makeConstraints() {
         guideLabel.snp.makeConstraints {
-            $0.top.equalTo(safeAreaLayoutGuide).inset(50)
+            $0.top.equalTo(safeAreaLayoutGuide).inset(137)
             $0.centerX.equalToSuperview()
+        }
+
+        koreanMelonImageView.snp.makeConstraints {
+            $0.top.equalTo(guideLabel.snp.bottom).offset(36)
+            $0.centerX.equalToSuperview()
+            $0.height.width.equalTo(300)
         }
 
         startButton.snp.makeConstraints {
@@ -42,4 +54,7 @@ final class KoreanMelonView: BaseView {
     }
 
     // MARK: Event
+    @objc private func handleStartButtonEvent() {
+        tapStartButton?()
+    }
 }

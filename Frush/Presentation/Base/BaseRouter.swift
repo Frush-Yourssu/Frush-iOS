@@ -48,6 +48,22 @@ final class BaseRouter {
         viewController?.navigationController?.pushViewController(thirdStepViewController, animated: true)
     }
 
+    //
+    func presentKoreanWaterMelonFirstStepViewController() {
+        let koreanMelonFirstStepViewController = KoreanMelonFirstStepViewController()
+        viewController?.navigationController?.pushViewController(koreanMelonFirstStepViewController, animated: true)
+    }
+
+    func presentKoreanWaterMelonSecondStepViewController() {
+        let koreanMelonSecondStepViewController = KoreanMelonSecondStepViewController()
+        viewController?.navigationController?.pushViewController(koreanMelonSecondStepViewController, animated: true)
+    }
+
+    func presentKoreanWaterMelonThirdStepViewController() {
+        let koreanMelonThirdStepViewController = KoreanMelonThirdStepViewController()
+        viewController?.navigationController?.pushViewController(koreanMelonThirdStepViewController, animated: true)
+    }
+
     func presentCameraViewController() {
         let cameraViewController = CameraViewController()
         viewController?.navigationController?.pushViewController(cameraViewController, animated: true)
@@ -62,6 +78,23 @@ final class BaseRouter {
         let cameraViewController3 = CameraViewController3()
         viewController?.navigationController?.pushViewController(cameraViewController3, animated: true)
     }
+
+    //
+    func presentKoreanMelonCameraViewController() {
+        let koreanWaterMelonCameraViewController = KoreanWaterMelonCameraViewController()
+        viewController?.navigationController?.pushViewController(koreanWaterMelonCameraViewController, animated: true)
+    }
+
+    func presentKoreanMelonCameraViewController2() {
+        let koreanWaterMelonCameraViewController2 = KoreanWaterMelonCameraViewController2()
+        viewController?.navigationController?.pushViewController(koreanWaterMelonCameraViewController2, animated: true)
+    }
+
+    func presentKoreanMelonCameraViewController3() {
+        let cameraViewController3 = CameraViewController3()
+        viewController?.navigationController?.pushViewController(cameraViewController3, animated: true)
+    }
+
 
     func presentLoadingViewController() {
         let loadingViewController = LoadingViewController()

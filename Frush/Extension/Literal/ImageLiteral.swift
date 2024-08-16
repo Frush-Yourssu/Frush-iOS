@@ -31,6 +31,7 @@ public enum FrushImage {
 
     public static var koreanMelonStep1: UIImage { .load(name: "korean_melon_step_1") }
     public static var koreanMelonStep2: UIImage { .load(name: "korean_melon_step_2") }
+    public static var koreanMelonStep3: UIImage { .load(name: "korean_melon_step_3") }
 
     public static var peach: UIImage { .load(name: "peach") }
     public static var peach1: UIImage { .load(name: "peach_1") }

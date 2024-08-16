@@ -1,20 +1,20 @@
 //
-//  KoreanMelonViewController.swift
+//  KoreanMelonSecondStepViewController.swift
 //  Frush
 //
-//  Created by 박지윤 on 8/16/24.
+//  Created by 성현주 on 8/17/24.
 //
 
 import UIKit
 
-final class KoreanMelonViewController: BaseViewController {
+final class KoreanMelonSecondStepViewController: BaseViewController {
 
     // MARK: UI Components
     private let backButton = BaseButton().then {
         $0.setImage(FrushButton.backButton, for: .normal)
     }
 
-    private let koreanMelonView = KoreanMelonView()
+    private let secondStepView = KoreanMelonSecondStepView()
 
     // MARK: Environment
     private let router = BaseRouter()
@@ -29,22 +29,22 @@ final class KoreanMelonViewController: BaseViewController {
 
     // MARK: Configuration
     override func configureSubviews() {
-        view.addSubview(koreanMelonView)
+        view.addSubview(secondStepView)
 
         backButton.tap = { [weak self] in
             guard let self else { return }
             router.dismissViewController()
         }
 
-        koreanMelonView.tapStartButton = { [weak self] in
+        secondStepView.tapCameraButton = { [weak self] in
             guard let self else { return }
-            router.presentKoreanWaterMelonFirstStepViewController()
+            router.presentKoreanMelonCameraViewController2()
         }
     }
 
     // MARK: Layout
     override func makeConstraints() {
-        koreanMelonView.snp.makeConstraints {
+        secondStepView.snp.makeConstraints {
             $0.verticalEdges.equalToSuperview()
             $0.horizontalEdges.equalToSuperview().inset(16)
         }
