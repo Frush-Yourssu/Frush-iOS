@@ -38,6 +38,16 @@ final class BaseRouter {
         viewController?.navigationController?.pushViewController(firstStepViewController, animated: true)
     }
 
+    func presentSecondStepViewController() {
+        let secondStepViewController = SecondStepViewController()
+        viewController?.navigationController?.pushViewController(secondStepViewController, animated: true)
+    }
+
+    func presentCameraViewController() {
+        let cameraViewController = CameraViewController()
+        viewController?.navigationController?.pushViewController(cameraViewController, animated: true)
+    }
+
     func dismissViewController() {
         viewController?.navigationController?.popViewController(animated: true)
     }
