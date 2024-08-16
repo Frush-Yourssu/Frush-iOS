@@ -15,9 +15,7 @@ final class FirstStepView: BaseView {
     }
 
     private let guideLabel = UILabel().then {
-        $0.text = "배꼽이 작을수록 맛있다!"
-        $0.textColor = .black
-        $0.font = UIFont.systemFont(ofSize: 20, weight: .bold)
+        $0.setDefaultLabel("배꼽이 작을수록 맛있다!")
     }
 
     private let cameraButton = BaseButton().then {

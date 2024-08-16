@@ -11,9 +11,8 @@ final class MainView: BaseView {
 
     // MARK: UI Components
     private let guideLabel = UILabel().then {
-        $0.text = "프루시에서\n맛있는 과일을 골라보세요!"
-        $0.textColor = .black
-        $0.font = UIFont.systemFont(ofSize: 18, weight: .semibold)
+        $0.setDefaultLabel("프루시에서\n맛있는 과일을 골라보세요!")
+        $0.font = UIFont(name: "GmarketSansTTFBold", size: 18)
         $0.textAlignment = .left
         $0.numberOfLines = 2
     }

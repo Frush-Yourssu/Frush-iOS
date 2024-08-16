@@ -15,9 +15,7 @@ final class SecondStepView: BaseView {
     }
 
     private let guideLabel = UILabel().then {
-        $0.text = "동그란 수박이 맛있다!"
-        $0.textColor = .black
-        $0.font = UIFont.systemFont(ofSize: 20, weight: .bold)
+        $0.setDefaultLabel("동그란 수박이 맛있다!")
     }
 
     private let cameraButton = BaseButton().then {
