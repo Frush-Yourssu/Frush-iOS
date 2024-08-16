@@ -59,6 +59,6 @@ final class MainViewController: BaseViewController {
 
     // MARK: Navigation Item
     private func setNavigationItem() {
-        navigationItem.title = "프루티"
+        navigationItem.titleView = UIImageView(image: FrushImage.frushLogo)
     }
 }
