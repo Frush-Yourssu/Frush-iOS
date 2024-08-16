@@ -16,11 +16,11 @@ final class ResultView: BaseView {
         $0.font = UIFont.systemFont(ofSize: 20, weight: .bold)
     }
 
-    private let waterMelonImageView = UIImageView().then {
+    private let frushImageView = UIImageView().then {
         $0.backgroundColor = .lightGray
     }
 
-    private let waterMelonLabel = UILabel().then {
+    private let frushTitleLabel = UILabel().then {
         $0.text = "맛없는 수박"
         $0.textColor = .black
         $0.font = UIFont.systemFont(ofSize: 18, weight: .bold)
@@ -42,8 +42,8 @@ final class ResultView: BaseView {
         resultDetailView.setData(waterMelonDataList: waterMelonDataList)
 
         addSubview(resultLabel)
-        addSubview(waterMelonImageView)
-        addSubview(waterMelonLabel)
+        addSubview(frushImageView)
+        addSubview(frushTitleLabel)
         addSubview(descriptLabel)
         addSubview(resultDetailView)
     }
@@ -55,19 +55,19 @@ final class ResultView: BaseView {
             $0.centerX.equalToSuperview()
         }
 
-        waterMelonImageView.snp.makeConstraints {
+        frushImageView.snp.makeConstraints {
             $0.top.equalTo(resultLabel.snp.bottom).offset(20)
             $0.centerX.equalToSuperview()
             $0.width.height.equalTo(180)
         }
 
-        waterMelonLabel.snp.makeConstraints {
-            $0.top.equalTo(waterMelonImageView.snp.bottom).offset(20)
+        frushTitleLabel.snp.makeConstraints {
+            $0.top.equalTo(frushImageView.snp.bottom).offset(20)
             $0.centerX.equalToSuperview()
         }
 
         descriptLabel.snp.makeConstraints {
-            $0.top.equalTo(waterMelonLabel.snp.bottom).offset(12)
+            $0.top.equalTo(frushTitleLabel.snp.bottom).offset(12)
             $0.centerX.equalToSuperview()
         }
 
@@ -78,4 +78,88 @@ final class ResultView: BaseView {
     }
 
     // MARK: Event
+
+    func setData(category: String) {
+        var total = 0
+        var average = 0
+
+        for frushRealData in FrushRealData.frushRealDataList {
+            let similarity = Int(frushRealData.similarity)
+            
+            total += similarity
+        }
+
+        average = total / 3
+
+        switch category {
+        case "waterMelon":
+            resultLabel.text = "내가 고른 수박은?"
+            switch average {
+            case 0...25:
+                frushImageView.image = FrushImage.waterMelon1
+                frushTitleLabel.text = ResultData.waterMelonResultList[0].title
+                descriptLabel.text = ResultData.waterMelonResultList[0].description
+            case 26...50:
+                frushImageView.image = FrushImage.waterMelon2
+                frushTitleLabel.text = ResultData.waterMelonResultList[1].title
+                descriptLabel.text = ResultData.waterMelonResultList[1].description
+            case 51...75:
+                frushImageView.image = FrushImage.waterMelon3
+                frushTitleLabel.text = ResultData.waterMelonResultList[2].title
+                descriptLabel.text = ResultData.waterMelonResultList[2].description
+            case 76...100:
+                frushImageView.image = FrushImage.waterMelon4
+                frushTitleLabel.text = ResultData.waterMelonResultList[3].title
+                descriptLabel.text = ResultData.waterMelonResultList[3].description
+            default:
+                return
+            }
+        case "koreanMelon":
+            resultLabel.text = "내가 고른 수박은?"
+            switch average {
+            case 0...25:
+                frushImageView.image = FrushImage.koreanMelon1
+                frushTitleLabel.text = ResultData.koreanMelonResultList[0].title
+                descriptLabel.text = ResultData.koreanMelonResultList[0].description
+            case 26...50:
+                frushImageView.image = FrushImage.koreanMelon2
+                frushTitleLabel.text = ResultData.koreanMelonResultList[1].title
+                descriptLabel.text = ResultData.koreanMelonResultList[1].description
+            case 51...75:
+                frushImageView.image = FrushImage.koreanMelon3
+                frushTitleLabel.text = ResultData.koreanMelonResultList[2].title
+                descriptLabel.text = ResultData.koreanMelonResultList[2].description
+            case 76...100:
+                frushImageView.image = FrushImage.koreanMelon4
+                frushTitleLabel.text = ResultData.koreanMelonResultList[3].title
+                descriptLabel.text = ResultData.koreanMelonResultList[3].description
+            default:
+                return
+            }
+        case "peachMelon":
+            resultLabel.text = "내가 고른 복숭아는?"
+            switch average {
+            case 0...25:
+                frushImageView.image = FrushImage.peach1
+                frushTitleLabel.text = ResultData.peachResultList[0].title
+                descriptLabel.text = ResultData.peachResultList[0].description
+            case 26...50:
+                frushImageView.image = FrushImage.peach2
+                frushTitleLabel.text = ResultData.peachResultList[1].title
+                descriptLabel.text = ResultData.peachResultList[1].description
+            case 51...75:
+                frushImageView.image = FrushImage.peach2
+                frushTitleLabel.text = ResultData.peachResultList[2].title
+                descriptLabel.text = ResultData.peachResultList[2].description
+            case 76...100:
+                frushImageView.image = FrushImage.peach3
+                frushTitleLabel.text = ResultData.peachResultList[3].title
+                descriptLabel.text = ResultData.peachResultList[3].description
+            default:
+                return
+            }
+        default:
+            return
+        }
+    }
 }
