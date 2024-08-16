@@ -32,14 +32,20 @@ final class ResultView: BaseView {
         $0.font = UIFont.systemFont(ofSize: 16, weight: .medium)
     }
 
+    private let resultDetailView = ResultDetailView()
+
     // MARK: Properties
+    let waterMelonDataList: [WaterMelonData] = WaterMelonData.waterMelonDataList
 
     // MARK: Configuration
     override func configureSubviews() {
+        resultDetailView.setData(waterMelonDataList: waterMelonDataList)
+
         addSubview(resultLabel)
         addSubview(waterMelonImageView)
         addSubview(waterMelonLabel)
         addSubview(descriptLabel)
+        addSubview(resultDetailView)
     }
 
     // MARK: Layout
@@ -63,6 +69,11 @@ final class ResultView: BaseView {
         descriptLabel.snp.makeConstraints {
             $0.top.equalTo(waterMelonLabel.snp.bottom).offset(12)
             $0.centerX.equalToSuperview()
+        }
+
+        resultDetailView.snp.makeConstraints {
+            $0.top.equalTo(descriptLabel.snp.bottom).offset(12)
+            $0.width.equalToSuperview()
         }
     }
 
