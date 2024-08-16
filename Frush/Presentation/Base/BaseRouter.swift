@@ -18,34 +18,34 @@ final class BaseRouter {
         viewController?.present(someViewController, animated: true)
     }
 
-    func presentWaterMelonViewController() {
-        let waterMelonViewController = WaterMelonViewController()
-        viewController?.navigationController?.pushViewController(waterMelonViewController, animated: true)
+    func presentFrushViewController(guideText: String, frushImage: UIImage) {
+        let frushViewController = FrushViewController(guideText: guideText, frushImage: frushImage)
+        viewController?.navigationController?.pushViewController(frushViewController, animated: true)
     }
 
-    func presentKoreanMelonViewController() {
-        let koreanMelonViewController = KoreanMelonViewController()
-        viewController?.navigationController?.pushViewController(koreanMelonViewController, animated: true)
-    }
-
-    func presentPeachViewController() {
-        let peachViewController = PeachViewController()
-        viewController?.navigationController?.pushViewController(peachViewController, animated: true)
-    }
-
-    func presentFirstStepViewController() {
-        let firstStepViewController = FirstStepViewController()
+    func presentFirstStepViewController(guideText: String, frushImage: UIImage) {
+        let firstStepViewController = FirstStepViewController(guideText: guideText, frushImage: frushImage)
         viewController?.navigationController?.pushViewController(firstStepViewController, animated: true)
     }
 
-    func presentSecondStepViewController() {
-        let secondStepViewController = SecondStepViewController()
+    func presentSecondStepViewController(guideText: String, frushImage: UIImage) {
+        let secondStepViewController = SecondStepViewController(guideText: guideText, frushImage: frushImage)
         viewController?.navigationController?.pushViewController(secondStepViewController, animated: true)
     }
 
-    func presentCameraViewController() {
-        let cameraViewController = CameraViewController()
+    func presentThirdStepViewController(guideText: String, frushImage: UIImage) {
+        let thirdStepViewController = ThirdStepViewController(guideText: guideText, frushImage: frushImage)
+        viewController?.navigationController?.pushViewController(thirdStepViewController, animated: true)
+    }
+
+    func presentCameraViewController(category: String, step: Int) {
+        let cameraViewController = CameraViewController(category: category, step: step)
         viewController?.navigationController?.pushViewController(cameraViewController, animated: true)
+    }
+
+    func presentLoadingViewController() {
+        let loadingViewController = LoadingViewController()
+        viewController?.navigationController?.pushViewController(loadingViewController, animated: true)
     }
 
     func dismissViewController() {

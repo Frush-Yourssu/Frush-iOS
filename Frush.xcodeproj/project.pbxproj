@@ -24,12 +24,6 @@
 		953651112C6F6AF900F58D13 /* BaseRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953651102C6F6AF900F58D13 /* BaseRouter.swift */; };
 		953651172C6F6CA100F58D13 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953651162C6F6CA100F58D13 /* MainView.swift */; };
 		953651192C6F6CA600F58D13 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953651182C6F6CA600F58D13 /* MainViewController.swift */; };
-		9536511B2C6F6CAD00F58D13 /* WaterMelonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9536511A2C6F6CAD00F58D13 /* WaterMelonView.swift */; };
-		9536511D2C6F6CB200F58D13 /* WaterMelonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9536511C2C6F6CB200F58D13 /* WaterMelonViewController.swift */; };
-		9536511F2C6F6CBA00F58D13 /* PeachView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9536511E2C6F6CBA00F58D13 /* PeachView.swift */; };
-		953651212C6F6CC200F58D13 /* PeachViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953651202C6F6CC200F58D13 /* PeachViewController.swift */; };
-		953651232C6F6CCD00F58D13 /* KoreanMelonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953651222C6F6CCD00F58D13 /* KoreanMelonView.swift */; };
-		953651252C6F6CD300F58D13 /* KoreanMelonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953651242C6F6CD300F58D13 /* KoreanMelonViewController.swift */; };
 		953651282C6F6DD400F58D13 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953651272C6F6DD400F58D13 /* CameraView.swift */; };
 		9536512A2C6F6DDA00F58D13 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953651292C6F6DDA00F58D13 /* CameraViewController.swift */; };
 		9536512D2C6F6E0800F58D13 /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9536512C2C6F6E0800F58D13 /* ResultView.swift */; };
@@ -50,7 +44,6 @@
 		95778AFD2C6FB0A7004BB616 /* DummyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95778AFC2C6FB0A7004BB616 /* DummyData.swift */; };
 		95778AFF2C6FB0D0004BB616 /* ResultContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95778AFE2C6FB0D0004BB616 /* ResultContentView.swift */; };
 		95778B012C6FB0E3004BB616 /* ResultStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95778B002C6FB0E3004BB616 /* ResultStackView.swift */; };
-		95778B032C6FB0FC004BB616 /* ResultProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95778B022C6FB0FC004BB616 /* ResultProgressView.swift */; };
 		95778B072C6FB2A7004BB616 /* GmarketSansTTFBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 95778B042C6FB2A7004BB616 /* GmarketSansTTFBold.ttf */; };
 		95778B082C6FB2A7004BB616 /* GmarketSansTTFLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 95778B052C6FB2A7004BB616 /* GmarketSansTTFLight.ttf */; };
 		95778B092C6FB2A7004BB616 /* GmarketSansTTFMedium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 95778B062C6FB2A7004BB616 /* GmarketSansTTFMedium.ttf */; };
@@ -66,6 +59,8 @@
 		95778B272C6FD8D4004BB616 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95778B262C6FD8D4004BB616 /* UIImage+Extension.swift */; };
 		95778B2A2C6FE147004BB616 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 95778B292C6FE147004BB616 /* Lottie */; };
 		95778B2C2C6FE15D004BB616 /* loading_animation.json in Resources */ = {isa = PBXBuildFile; fileRef = 95778B2B2C6FE15D004BB616 /* loading_animation.json */; };
+		95778B2F2C6FE3BB004BB616 /* FrushView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95778B2E2C6FE3BB004BB616 /* FrushView.swift */; };
+		95778B312C6FE3C3004BB616 /* FrushViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95778B302C6FE3C3004BB616 /* FrushViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -83,12 +78,6 @@
 		953651102C6F6AF900F58D13 /* BaseRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRouter.swift; sourceTree = "<group>"; };
 		953651162C6F6CA100F58D13 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		953651182C6F6CA600F58D13 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
-		9536511A2C6F6CAD00F58D13 /* WaterMelonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterMelonView.swift; sourceTree = "<group>"; };
-		9536511C2C6F6CB200F58D13 /* WaterMelonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterMelonViewController.swift; sourceTree = "<group>"; };
-		9536511E2C6F6CBA00F58D13 /* PeachView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeachView.swift; sourceTree = "<group>"; };
-		953651202C6F6CC200F58D13 /* PeachViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeachViewController.swift; sourceTree = "<group>"; };
-		953651222C6F6CCD00F58D13 /* KoreanMelonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KoreanMelonView.swift; sourceTree = "<group>"; };
-		953651242C6F6CD300F58D13 /* KoreanMelonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KoreanMelonViewController.swift; sourceTree = "<group>"; };
 		953651272C6F6DD400F58D13 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
 		953651292C6F6DDA00F58D13 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		9536512C2C6F6E0800F58D13 /* ResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultView.swift; sourceTree = "<group>"; };
@@ -108,7 +97,6 @@
 		95778AFC2C6FB0A7004BB616 /* DummyData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyData.swift; sourceTree = "<group>"; };
 		95778AFE2C6FB0D0004BB616 /* ResultContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultContentView.swift; sourceTree = "<group>"; };
 		95778B002C6FB0E3004BB616 /* ResultStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultStackView.swift; sourceTree = "<group>"; };
-		95778B022C6FB0FC004BB616 /* ResultProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultProgressView.swift; sourceTree = "<group>"; };
 		95778B042C6FB2A7004BB616 /* GmarketSansTTFBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = GmarketSansTTFBold.ttf; sourceTree = "<group>"; };
 		95778B052C6FB2A7004BB616 /* GmarketSansTTFLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = GmarketSansTTFLight.ttf; sourceTree = "<group>"; };
 		95778B062C6FB2A7004BB616 /* GmarketSansTTFMedium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = GmarketSansTTFMedium.ttf; sourceTree = "<group>"; };
@@ -123,6 +111,8 @@
 		95778B1E2C6FC02B004BB616 /* FrushResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrushResponse.swift; sourceTree = "<group>"; };
 		95778B262C6FD8D4004BB616 /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
 		95778B2B2C6FE15D004BB616 /* loading_animation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = loading_animation.json; sourceTree = "<group>"; };
+		95778B2E2C6FE3BB004BB616 /* FrushView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrushView.swift; sourceTree = "<group>"; };
+		95778B302C6FE3C3004BB616 /* FrushViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrushViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -229,12 +219,10 @@
 			isa = PBXGroup;
 			children = (
 				953651122C6F6C5E00F58D13 /* Main */,
-				953651132C6F6C6C00F58D13 /* WaterMelon */,
+				95778B2D2C6FE3AF004BB616 /* Frush */,
 				953651422C6F7A8900F58D13 /* FirstStep */,
 				953651432C6F7ACB00F58D13 /* SecondStep */,
 				953651442C6F7ACF00F58D13 /* ThirdStep */,
-				953651152C6F6C7500F58D13 /* KoreanMelon */,
-				953651142C6F6C7100F58D13 /* Peach */,
 				953651262C6F6DCA00F58D13 /* Camera */,
 				953651302C6F6E2D00F58D13 /* Loading */,
 				9536512B2C6F6DFF00F58D13 /* Result */,
@@ -267,33 +255,6 @@
 			path = Main;
 			sourceTree = "<group>";
 		};
-		953651132C6F6C6C00F58D13 /* WaterMelon */ = {
-			isa = PBXGroup;
-			children = (
-				9536511A2C6F6CAD00F58D13 /* WaterMelonView.swift */,
-				9536511C2C6F6CB200F58D13 /* WaterMelonViewController.swift */,
-			);
-			path = WaterMelon;
-			sourceTree = "<group>";
-		};
-		953651142C6F6C7100F58D13 /* Peach */ = {
-			isa = PBXGroup;
-			children = (
-				9536511E2C6F6CBA00F58D13 /* PeachView.swift */,
-				953651202C6F6CC200F58D13 /* PeachViewController.swift */,
-			);
-			path = Peach;
-			sourceTree = "<group>";
-		};
-		953651152C6F6C7500F58D13 /* KoreanMelon */ = {
-			isa = PBXGroup;
-			children = (
-				953651222C6F6CCD00F58D13 /* KoreanMelonView.swift */,
-				953651242C6F6CD300F58D13 /* KoreanMelonViewController.swift */,
-			);
-			path = KoreanMelon;
-			sourceTree = "<group>";
-		};
 		953651262C6F6DCA00F58D13 /* Camera */ = {
 			isa = PBXGroup;
 			children = (
@@ -309,7 +270,6 @@
 				9536512C2C6F6E0800F58D13 /* ResultView.swift */,
 				95778AFE2C6FB0D0004BB616 /* ResultContentView.swift */,
 				95778B002C6FB0E3004BB616 /* ResultStackView.swift */,
-				95778B022C6FB0FC004BB616 /* ResultProgressView.swift */,
 				9536512E2C6F6E0D00F58D13 /* ResultViewController.swift */,
 			);
 			path = Result;
@@ -375,6 +335,15 @@
 				95778B1A2C6FBFD3004BB616 /* FrushAPI.swift */,
 				95778B1C2C6FC025004BB616 /* FrushService.swift */,
 				95778B1E2C6FC02B004BB616 /* FrushResponse.swift */,
+			);
+			path = Frush;
+			sourceTree = "<group>";
+		};
+		95778B2D2C6FE3AF004BB616 /* Frush */ = {
+			isa = PBXGroup;
+			children = (
+				95778B2E2C6FE3BB004BB616 /* FrushView.swift */,
+				95778B302C6FE3C3004BB616 /* FrushViewController.swift */,
 			);
 			path = Frush;
 			sourceTree = "<group>";
@@ -473,8 +442,6 @@
 				95778B1D2C6FC025004BB616 /* FrushService.swift in Sources */,
 				95778B1F2C6FC02B004BB616 /* FrushResponse.swift in Sources */,
 				95778B0E2C6FBF52004BB616 /* MoyaLoggerPlugin.swift in Sources */,
-				95778B032C6FB0FC004BB616 /* ResultProgressView.swift in Sources */,
-				9536511B2C6F6CAD00F58D13 /* WaterMelonView.swift in Sources */,
 				9536514E2C6F7B0000F58D13 /* ThirdStepView.swift in Sources */,
 				95778B102C6FBF68004BB616 /* NetworkResult.swift in Sources */,
 				95778B272C6FD8D4004BB616 /* UIImage+Extension.swift in Sources */,
@@ -484,18 +451,16 @@
 				953650F22C6F694200F58D13 /* BaseViewController.swift in Sources */,
 				953651392C6F740100F58D13 /* ImageLiteral.swift in Sources */,
 				953651322C6F6E3700F58D13 /* LoadingView.swift in Sources */,
-				953651252C6F6CD300F58D13 /* KoreanMelonViewController.swift in Sources */,
+				95778B2F2C6FE3BB004BB616 /* FrushView.swift in Sources */,
 				95778AFD2C6FB0A7004BB616 /* DummyData.swift in Sources */,
 				953650F42C6F696200F58D13 /* BaseView.swift in Sources */,
 				9536513F2C6F762F00F58D13 /* UIColor+Extension.swift in Sources */,
-				953651232C6F6CCD00F58D13 /* KoreanMelonView.swift in Sources */,
 				953651502C6F7B0900F58D13 /* ThirdStepViewController.swift in Sources */,
 				953651522C6F885D00F58D13 /* UIStackView+Extension.swift in Sources */,
 				953650DA2C6F624F00F58D13 /* AppDelegate.swift in Sources */,
 				953651482C6F7AED00F58D13 /* FirstStepViewController.swift in Sources */,
-				953651212C6F6CC200F58D13 /* PeachViewController.swift in Sources */,
+				95778B312C6FE3C3004BB616 /* FrushViewController.swift in Sources */,
 				95778B122C6FBF85004BB616 /* TargetType+Extension.swift in Sources */,
-				9536511D2C6F6CB200F58D13 /* WaterMelonViewController.swift in Sources */,
 				95778B012C6FB0E3004BB616 /* ResultStackView.swift in Sources */,
 				95778B1B2C6FBFD3004BB616 /* FrushAPI.swift in Sources */,
 				95778B0C2C6FB36A004BB616 /* UILabel+Extension.swift in Sources */,
@@ -512,7 +477,6 @@
 				9536514C2C6F7AFA00F58D13 /* SecondStepViewController.swift in Sources */,
 				953651192C6F6CA600F58D13 /* MainViewController.swift in Sources */,
 				953651342C6F6E3F00F58D13 /* LoadingViewController.swift in Sources */,
-				9536511F2C6F6CBA00F58D13 /* PeachView.swift in Sources */,
 				9536512A2C6F6DDA00F58D13 /* CameraViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

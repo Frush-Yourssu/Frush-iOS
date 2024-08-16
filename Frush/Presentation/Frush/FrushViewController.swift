@@ -1,13 +1,13 @@
 //
-//  FirstStepViewController.swift
+//  FrushViewController.swift
 //  Frush
 //
-//  Created by 박지윤 on 8/16/24.
+//  Created by 박지윤 on 8/17/24.
 //
 
 import UIKit
 
-final class FirstStepViewController: BaseViewController {
+final class FrushViewController: BaseViewController {
 
     let guideText: String
     let frushImage: UIImage
@@ -17,7 +17,7 @@ final class FirstStepViewController: BaseViewController {
         $0.setImage(FrushButton.backButton, for: .normal)
     }
 
-    private let firstStepView = FirstStepView()
+    private let frushView = FrushView()
 
     // MARK: Environment
     private let router = BaseRouter()
@@ -44,22 +44,28 @@ final class FirstStepViewController: BaseViewController {
 
     // MARK: Configuration
     override func configureSubviews() {
-        view.addSubview(firstStepView)
+        view.addSubview(frushView)
 
         backButton.tap = { [weak self] in
             guard let self else { return }
             router.dismissViewController()
         }
 
-        firstStepView.tapCameraButton = { [weak self] in
+        frushView.tapStartButton = { [weak self] in
             guard let self else { return }
             switch frushImage {
-            case FrushImage.waterMelonStep1:
-                router.presentCameraViewController(category: "waterMelon", step: 1)
-            case FrushImage.koreanMelonStep1:
-                router.presentCameraViewController(category: "koreanMelon", step: 1)
-            case FrushImage.peachStep1:
-                router.presentCameraViewController(category: "peach", step: 1)
+            case FrushImage.waterMelon:
+                router.presentFirstStepViewController(
+                    guideText: "배꼽이 작을수록 맛있다!",
+                    frushImage: FrushImage.waterMelonStep1)
+            case FrushImage.koreanMelon:
+                router.presentFirstStepViewController(
+                    guideText: "배꼽이 작을수록 맛있다?",
+                    frushImage: FrushImage.koreanMelonStep1)
+            case FrushImage.peach:
+                router.presentFirstStepViewController(
+                    guideText: "붉은 색이 도는 것이 맛있다!",
+                    frushImage: FrushImage.peachStep1)
             default:
                 return
             }
@@ -68,7 +74,7 @@ final class FirstStepViewController: BaseViewController {
 
     // MARK: Layout
     override func makeConstraints() {
-        firstStepView.snp.makeConstraints {
+        frushView.snp.makeConstraints {
             $0.verticalEdges.equalToSuperview()
             $0.horizontalEdges.equalToSuperview().inset(16)
         }
@@ -81,6 +87,6 @@ final class FirstStepViewController: BaseViewController {
     }
 
     private func setFrushView() {
-        firstStepView.setData(guideText: guideText, frushImage: frushImage)
+        frushView.setData(guideText: guideText, frushImage: frushImage)
     }
 }
