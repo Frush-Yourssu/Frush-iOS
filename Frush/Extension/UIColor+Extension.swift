@@ -16,6 +16,10 @@ extension UIColor {
     static var lightOrange: UIColor {
         return UIColor(hex: "#FFE8D9")
     }
+
+    static var lightGray: UIColor {
+        return UIColor(hex: "#E8EAEC")
+    }
 }
 
 extension UIColor {
