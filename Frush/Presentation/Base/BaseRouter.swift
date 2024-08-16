@@ -54,6 +54,6 @@ final class BaseRouter {
     }
 
     func dismissViewController() {
-        viewController?.navigationController?.popViewController(animated: true)
+        viewController?.navigationController?.popToRootViewController(animated: true)
     }
 }
