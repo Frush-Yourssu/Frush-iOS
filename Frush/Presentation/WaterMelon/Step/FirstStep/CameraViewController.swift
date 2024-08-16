@@ -17,7 +17,7 @@ final class CameraViewController: BaseViewController {
 
     private let overlayView: UIImageView = {
         let overlayView = UIImageView()
-        overlayView.image = UIImage(named: "Ellipse 4")
+        overlayView.image = FrushImage.waterMelonLayer1
         overlayView.isHidden = true
         return overlayView
     }()
@@ -67,7 +67,7 @@ final class CameraViewController: BaseViewController {
 
                 self?.overlayView.snp.makeConstraints {
                     $0.center.equalToSuperview()
-                    $0.width.height.equalTo(100)
+                    $0.width.height.equalTo(250)
                 }
 
                 self?.overlayView.isHidden = false

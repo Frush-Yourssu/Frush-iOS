@@ -64,6 +64,23 @@ final class BaseRouter {
         viewController?.navigationController?.pushViewController(koreanMelonThirdStepViewController, animated: true)
     }
 
+    func presentPeachFirstStepViewController() {
+        let peachFirstStepViewController = PeachFirstStepViewController()
+        viewController?.navigationController?.pushViewController(peachFirstStepViewController, animated: true)
+    }
+
+    func presentPeachSecondStepViewController() {
+        let peachSecondStepViewController = PeachSecondStepViewController()
+        viewController?.navigationController?.pushViewController(peachSecondStepViewController, animated: true)
+    }
+
+    func presentPeachThirdStepViewController() {
+        let peachThirdStepViewController = PeachThirdStepViewController()
+        viewController?.navigationController?.pushViewController(peachThirdStepViewController, animated: true)
+    }
+
+
+
     func presentCameraViewController() {
         let cameraViewController = CameraViewController()
         viewController?.navigationController?.pushViewController(cameraViewController, animated: true)
@@ -93,6 +110,21 @@ final class BaseRouter {
     func presentKoreanMelonCameraViewController3() {
         let cameraViewController3 = CameraViewController3()
         viewController?.navigationController?.pushViewController(cameraViewController3, animated: true)
+    }
+
+    func presentPeachCameraViewController() {
+        let peachCameraViewController = PeachCameraViewController()
+        viewController?.navigationController?.pushViewController(peachCameraViewController, animated: true)
+    }
+
+    func presentPeachCameraViewController2() {
+        let peachCamerViewController2 = PeachCamerViewController2()
+        viewController?.navigationController?.pushViewController(peachCamerViewController2, animated: true)
+    }
+
+    func presentPeachCameraViewController3() {
+        let peachCameraViewController3 = PeachCameraViewController3()
+        viewController?.navigationController?.pushViewController(peachCameraViewController3, animated: true)
     }
 
 

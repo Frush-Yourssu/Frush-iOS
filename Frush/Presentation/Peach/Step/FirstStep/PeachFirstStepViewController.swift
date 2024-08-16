@@ -1,20 +1,20 @@
 //
-//  PeachViewController.swift
+//  PeachFirstStepViewController.swift
 //  Frush
 //
-//  Created by 박지윤 on 8/16/24.
+//  Created by 성현주 on 8/17/24.
 //
 
 import UIKit
 
-final class PeachViewController: BaseViewController {
+final class PeachFirstStepViewController: BaseViewController {
 
     // MARK: UI Components
     private let backButton = BaseButton().then {
         $0.setImage(FrushButton.backButton, for: .normal)
     }
 
-    private let peachView = PeachView()
+    private let firstStepView = PeachFirstStepView()
 
     // MARK: Environment
     private let router = BaseRouter()
@@ -29,22 +29,22 @@ final class PeachViewController: BaseViewController {
 
     // MARK: Configuration
     override func configureSubviews() {
-        view.addSubview(peachView)
+        view.addSubview(firstStepView)
 
         backButton.tap = { [weak self] in
             guard let self else { return }
             router.dismissViewController()
         }
 
-        peachView.tapStartButton = { [weak self] in
+        firstStepView.tapCameraButton = { [weak self] in
             guard let self else { return }
-            router.presentPeachFirstStepViewController()
+            router.presentPeachCameraViewController()
         }
     }
 
     // MARK: Layout
     override func makeConstraints() {
-        peachView.snp.makeConstraints {
+        firstStepView.snp.makeConstraints {
             $0.verticalEdges.equalToSuperview()
             $0.horizontalEdges.equalToSuperview().inset(16)
         }
@@ -56,3 +56,4 @@ final class PeachViewController: BaseViewController {
         navigationItem.leftBarButtonItem = UIBarButtonItem(customView: backButton)
     }
 }
+

@@ -1,5 +1,5 @@
 //
-//  KoreanWaterMelonCameraViewController.swift
+//  PeachCameraViewController.swift
 //  Frush
 //
 //  Created by 성현주 on 8/17/24.
@@ -8,7 +8,7 @@
 import UIKit
 import AVFoundation
 
-final class KoreanWaterMelonCameraViewController: BaseViewController {
+final class PeachCameraViewController: BaseViewController {
 
     // MARK: UI Components
     private let backButton = BaseButton().then {
@@ -17,7 +17,7 @@ final class KoreanWaterMelonCameraViewController: BaseViewController {
 
     private let overlayView: UIImageView = {
         let overlayView = UIImageView()
-        overlayView.image = FrushImage.koreanMelonLayer1
+        overlayView.image = FrushImage.peachLayer1
         overlayView.isHidden = true
         return overlayView
     }()
@@ -67,8 +67,7 @@ final class KoreanWaterMelonCameraViewController: BaseViewController {
 
                 self?.overlayView.snp.makeConstraints {
                     $0.center.equalToSuperview()
-                    $0.width.equalTo(200)
-                    $0.height.equalTo(250)
+                    $0.width.height.equalTo(250)
                 }
 
                 self?.overlayView.isHidden = false
@@ -108,7 +107,7 @@ final class KoreanWaterMelonCameraViewController: BaseViewController {
 }
 
 //이미지 처리하는 부분
-extension KoreanWaterMelonCameraViewController: UINavigationControllerDelegate, UIImagePickerControllerDelegate, AVCapturePhotoCaptureDelegate {
+extension PeachCameraViewController: UINavigationControllerDelegate, UIImagePickerControllerDelegate, AVCapturePhotoCaptureDelegate {
 
     func imagePickerController(
         _ picker: UIImagePickerController,
@@ -121,7 +120,7 @@ extension KoreanWaterMelonCameraViewController: UINavigationControllerDelegate, 
 
 
         picker.dismiss(animated: true, completion: nil)
-        router.presentKoreanWaterMelonSecondStepViewController()
+        router.presentPeachSecondStepViewController()
     }
 }
 import Foundation

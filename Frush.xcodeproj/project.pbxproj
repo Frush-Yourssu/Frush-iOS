@@ -66,6 +66,15 @@
 		E5B2BFD52C6FD91B00B5B2EB /* KoreanMelonThirdStepViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B2BFD42C6FD91B00B5B2EB /* KoreanMelonThirdStepViewController.swift */; };
 		E5B2BFD72C6FD93100B5B2EB /* KoreanMelonThirdStepView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B2BFD62C6FD93100B5B2EB /* KoreanMelonThirdStepView.swift */; };
 		E5B2BFD92C6FD94300B5B2EB /* KoreanWaterMelonCameraViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B2BFD82C6FD94300B5B2EB /* KoreanWaterMelonCameraViewController3.swift */; };
+		E5B2BFE12C6FDDAB00B5B2EB /* PeachFirstStepView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B2BFE02C6FDDAB00B5B2EB /* PeachFirstStepView.swift */; };
+		E5B2BFE32C6FDDC000B5B2EB /* PeachFirstStepViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B2BFE22C6FDDC000B5B2EB /* PeachFirstStepViewController.swift */; };
+		E5B2BFE52C6FDDD100B5B2EB /* PeachCameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B2BFE42C6FDDD100B5B2EB /* PeachCameraViewController.swift */; };
+		E5B2BFE72C6FDDE500B5B2EB /* PeachSecondStepView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B2BFE62C6FDDE500B5B2EB /* PeachSecondStepView.swift */; };
+		E5B2BFE92C6FDDF400B5B2EB /* PeachSecondStepViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B2BFE82C6FDDF400B5B2EB /* PeachSecondStepViewController.swift */; };
+		E5B2BFEB2C6FDE0200B5B2EB /* PeachCamerViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B2BFEA2C6FDE0200B5B2EB /* PeachCamerViewController2.swift */; };
+		E5B2BFED2C6FDE1800B5B2EB /* PeachThirdStepView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B2BFEC2C6FDE1800B5B2EB /* PeachThirdStepView.swift */; };
+		E5B2BFEF2C6FDE2900B5B2EB /* PeachThirdStepViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B2BFEE2C6FDE2900B5B2EB /* PeachThirdStepViewController.swift */; };
+		E5B2BFF12C6FDE3800B5B2EB /* PeachCameraViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B2BFF02C6FDE3800B5B2EB /* PeachCameraViewController3.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -124,6 +133,15 @@
 		E5B2BFD42C6FD91B00B5B2EB /* KoreanMelonThirdStepViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KoreanMelonThirdStepViewController.swift; sourceTree = "<group>"; };
 		E5B2BFD62C6FD93100B5B2EB /* KoreanMelonThirdStepView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KoreanMelonThirdStepView.swift; sourceTree = "<group>"; };
 		E5B2BFD82C6FD94300B5B2EB /* KoreanWaterMelonCameraViewController3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KoreanWaterMelonCameraViewController3.swift; sourceTree = "<group>"; };
+		E5B2BFE02C6FDDAB00B5B2EB /* PeachFirstStepView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeachFirstStepView.swift; sourceTree = "<group>"; };
+		E5B2BFE22C6FDDC000B5B2EB /* PeachFirstStepViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeachFirstStepViewController.swift; sourceTree = "<group>"; };
+		E5B2BFE42C6FDDD100B5B2EB /* PeachCameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeachCameraViewController.swift; sourceTree = "<group>"; };
+		E5B2BFE62C6FDDE500B5B2EB /* PeachSecondStepView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeachSecondStepView.swift; sourceTree = "<group>"; };
+		E5B2BFE82C6FDDF400B5B2EB /* PeachSecondStepViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeachSecondStepViewController.swift; sourceTree = "<group>"; };
+		E5B2BFEA2C6FDE0200B5B2EB /* PeachCamerViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeachCamerViewController2.swift; sourceTree = "<group>"; };
+		E5B2BFEC2C6FDE1800B5B2EB /* PeachThirdStepView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeachThirdStepView.swift; sourceTree = "<group>"; };
+		E5B2BFEE2C6FDE2900B5B2EB /* PeachThirdStepViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeachThirdStepViewController.swift; sourceTree = "<group>"; };
+		E5B2BFF02C6FDE3800B5B2EB /* PeachCameraViewController3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeachCameraViewController3.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -271,6 +289,7 @@
 			children = (
 				9536511E2C6F6CBA00F58D13 /* PeachView.swift */,
 				953651202C6F6CC200F58D13 /* PeachViewController.swift */,
+				E5B2BFDA2C6FDD0900B5B2EB /* Step */,
 			);
 			path = Peach;
 			sourceTree = "<group>";
@@ -375,9 +394,9 @@
 		E5B2BFC42C6FD4B100B5B2EB /* Step */ = {
 			isa = PBXGroup;
 			children = (
-				E5B2BFCB2C6FD57C00B5B2EB /* ThirdStep */,
-				E5B2BFCA2C6FD57400B5B2EB /* SecondStep */,
 				E5B2BFC72C6FD4D600B5B2EB /* FirstStep */,
+				E5B2BFCA2C6FD57400B5B2EB /* SecondStep */,
+				E5B2BFCB2C6FD57C00B5B2EB /* ThirdStep */,
 			);
 			path = Step;
 			sourceTree = "<group>";
@@ -408,6 +427,46 @@
 				E5B2BFD62C6FD93100B5B2EB /* KoreanMelonThirdStepView.swift */,
 				E5B2BFD42C6FD91B00B5B2EB /* KoreanMelonThirdStepViewController.swift */,
 				E5B2BFD82C6FD94300B5B2EB /* KoreanWaterMelonCameraViewController3.swift */,
+			);
+			path = ThirdStep;
+			sourceTree = "<group>";
+		};
+		E5B2BFDA2C6FDD0900B5B2EB /* Step */ = {
+			isa = PBXGroup;
+			children = (
+				E5B2BFDB2C6FDD1700B5B2EB /* FirstStep */,
+				E5B2BFDC2C6FDD2400B5B2EB /* SecondStep */,
+				E5B2BFDF2C6FDD4900B5B2EB /* ThirdStep */,
+			);
+			path = Step;
+			sourceTree = "<group>";
+		};
+		E5B2BFDB2C6FDD1700B5B2EB /* FirstStep */ = {
+			isa = PBXGroup;
+			children = (
+				E5B2BFE02C6FDDAB00B5B2EB /* PeachFirstStepView.swift */,
+				E5B2BFE22C6FDDC000B5B2EB /* PeachFirstStepViewController.swift */,
+				E5B2BFE42C6FDDD100B5B2EB /* PeachCameraViewController.swift */,
+			);
+			path = FirstStep;
+			sourceTree = "<group>";
+		};
+		E5B2BFDC2C6FDD2400B5B2EB /* SecondStep */ = {
+			isa = PBXGroup;
+			children = (
+				E5B2BFE62C6FDDE500B5B2EB /* PeachSecondStepView.swift */,
+				E5B2BFE82C6FDDF400B5B2EB /* PeachSecondStepViewController.swift */,
+				E5B2BFEA2C6FDE0200B5B2EB /* PeachCamerViewController2.swift */,
+			);
+			path = SecondStep;
+			sourceTree = "<group>";
+		};
+		E5B2BFDF2C6FDD4900B5B2EB /* ThirdStep */ = {
+			isa = PBXGroup;
+			children = (
+				E5B2BFEC2C6FDE1800B5B2EB /* PeachThirdStepView.swift */,
+				E5B2BFEE2C6FDE2900B5B2EB /* PeachThirdStepViewController.swift */,
+				E5B2BFF02C6FDE3800B5B2EB /* PeachCameraViewController3.swift */,
 			);
 			path = ThirdStep;
 			sourceTree = "<group>";
@@ -498,15 +557,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5B2BFE72C6FDDE500B5B2EB /* PeachSecondStepView.swift in Sources */,
 				953650DE2C6F624F00F58D13 /* ViewController.swift in Sources */,
 				953651172C6F6CA100F58D13 /* MainView.swift in Sources */,
 				95778B032C6FB0FC004BB616 /* ResultProgressView.swift in Sources */,
+				E5B2BFED2C6FDE1800B5B2EB /* PeachThirdStepView.swift in Sources */,
 				9536511B2C6F6CAD00F58D13 /* WaterMelonView.swift in Sources */,
 				9536514E2C6F7B0000F58D13 /* ThirdStepView.swift in Sources */,
 				E5B2BFCF2C6FD5A000B5B2EB /* KoreanMelonSecondStepViewController.swift in Sources */,
 				9536512D2C6F6E0800F58D13 /* ResultView.swift in Sources */,
 				E5B2BFD32C6FD73500B5B2EB /* KoreanWaterMelonCameraViewController2.swift in Sources */,
 				95778AFF2C6FB0D0004BB616 /* ResultContentView.swift in Sources */,
+				E5B2BFE12C6FDDAB00B5B2EB /* PeachFirstStepView.swift in Sources */,
 				E5B2BFC92C6FD51600B5B2EB /* KoreanMelonFirstStepViewController.swift in Sources */,
 				953650F22C6F694200F58D13 /* BaseViewController.swift in Sources */,
 				953651392C6F740100F58D13 /* ImageLiteral.swift in Sources */,
@@ -518,12 +580,15 @@
 				E5B2BFC22C6FCA9B00B5B2EB /* CameraViewController3.swift in Sources */,
 				9536513F2C6F762F00F58D13 /* UIColor+Extension.swift in Sources */,
 				953651232C6F6CCD00F58D13 /* KoreanMelonView.swift in Sources */,
+				E5B2BFE92C6FDDF400B5B2EB /* PeachSecondStepViewController.swift in Sources */,
 				953651502C6F7B0900F58D13 /* ThirdStepViewController.swift in Sources */,
 				953651522C6F885D00F58D13 /* UIStackView+Extension.swift in Sources */,
 				953650DA2C6F624F00F58D13 /* AppDelegate.swift in Sources */,
 				953651482C6F7AED00F58D13 /* FirstStepViewController.swift in Sources */,
 				953651212C6F6CC200F58D13 /* PeachViewController.swift in Sources */,
 				9536511D2C6F6CB200F58D13 /* WaterMelonViewController.swift in Sources */,
+				E5B2BFE32C6FDDC000B5B2EB /* PeachFirstStepViewController.swift in Sources */,
+				E5B2BFEB2C6FDE0200B5B2EB /* PeachCamerViewController2.swift in Sources */,
 				95778B012C6FB0E3004BB616 /* ResultStackView.swift in Sources */,
 				95778B0C2C6FB36A004BB616 /* UILabel+Extension.swift in Sources */,
 				953650F62C6F696E00F58D13 /* BaseButton.swift in Sources */,
@@ -533,6 +598,7 @@
 				E5B2BFD52C6FD91B00B5B2EB /* KoreanMelonThirdStepViewController.swift in Sources */,
 				953651462C6F7AE600F58D13 /* FirstStepView.swift in Sources */,
 				953651282C6F6DD400F58D13 /* CameraView.swift in Sources */,
+				E5B2BFF12C6FDE3800B5B2EB /* PeachCameraViewController3.swift in Sources */,
 				E5B2BFCD2C6FD59100B5B2EB /* KoreanMelonSecondStepView.swift in Sources */,
 				953650F82C6F698400F58D13 /* AppDependency.swift in Sources */,
 				9536512F2C6F6E0D00F58D13 /* ResultViewController.swift in Sources */,
@@ -540,9 +606,11 @@
 				9536514C2C6F7AFA00F58D13 /* SecondStepViewController.swift in Sources */,
 				953651192C6F6CA600F58D13 /* MainViewController.swift in Sources */,
 				E5B2BFC02C6FCA1200B5B2EB /* CameraViewController2.swift in Sources */,
+				E5B2BFE52C6FDDD100B5B2EB /* PeachCameraViewController.swift in Sources */,
 				953651342C6F6E3F00F58D13 /* LoadingViewController.swift in Sources */,
 				E5B2BFD92C6FD94300B5B2EB /* KoreanWaterMelonCameraViewController3.swift in Sources */,
 				9536511F2C6F6CBA00F58D13 /* PeachView.swift in Sources */,
+				E5B2BFEF2C6FDE2900B5B2EB /* PeachThirdStepViewController.swift in Sources */,
 				9536512A2C6F6DDA00F58D13 /* CameraViewController.swift in Sources */,
 				E5B2BFD12C6FD6DB00B5B2EB /* KoreanWaterMelonCameraViewController.swift in Sources */,
 				E5B2BFD72C6FD93100B5B2EB /* KoreanMelonThirdStepView.swift in Sources */,
