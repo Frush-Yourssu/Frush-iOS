@@ -42,8 +42,8 @@ final class MainView: BaseView {
         addSubview(peachButton)
 
         waterMelonButton.addTarget(self, action: #selector(handleWaterMelonButtonEvent), for: .touchUpInside)
-        koreanMelonButton.addTarget(self, action: #selector(handlePeachButtonEvent), for: .touchUpInside)
-        peachButton.addTarget(self, action: #selector(handleKoreanMelonButtonEvent), for: .touchUpInside)
+        koreanMelonButton.addTarget(self, action: #selector(handleKoreanMelonButtonEvent), for: .touchUpInside)
+        peachButton.addTarget(self, action: #selector(handlePeachButtonEvent), for: .touchUpInside)
     }
 
     // MARK: Layout
@@ -77,11 +77,11 @@ final class MainView: BaseView {
         tapWaterMelonButton?()
     }
 
-    @objc private func handlePeachButtonEvent() {
-        tapPeachButton?()
-    }
-
     @objc private func handleKoreanMelonButtonEvent() {
         tapKoreanMelonButton?()
+    }
+
+    @objc private func handlePeachButtonEvent() {
+        tapPeachButton?()
     }
 }

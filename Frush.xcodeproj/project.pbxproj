@@ -38,6 +38,7 @@
 		9536512F2C6F6E0D00F58D13 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9536512E2C6F6E0D00F58D13 /* ResultViewController.swift */; };
 		953651322C6F6E3700F58D13 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953651312C6F6E3700F58D13 /* LoadingView.swift */; };
 		953651342C6F6E3F00F58D13 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953651332C6F6E3F00F58D13 /* LoadingViewController.swift */; };
+		953651392C6F740100F58D13 /* ImageLiteral.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953651382C6F740100F58D13 /* ImageLiteral.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -67,6 +68,7 @@
 		9536512E2C6F6E0D00F58D13 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 		953651312C6F6E3700F58D13 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		953651332C6F6E3F00F58D13 /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
+		953651382C6F740100F58D13 /* ImageLiteral.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLiteral.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +159,7 @@
 		9536510D2C6F6AAA00F58D13 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				953651372C6F73F900F58D13 /* Literal */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -245,6 +248,14 @@
 				953651332C6F6E3F00F58D13 /* LoadingViewController.swift */,
 			);
 			path = Loading;
+			sourceTree = "<group>";
+		};
+		953651372C6F73F900F58D13 /* Literal */ = {
+			isa = PBXGroup;
+			children = (
+				953651382C6F740100F58D13 /* ImageLiteral.swift */,
+			);
+			path = Literal;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -336,6 +347,7 @@
 				9536511B2C6F6CAD00F58D13 /* WaterMelonView.swift in Sources */,
 				9536512D2C6F6E0800F58D13 /* ResultView.swift in Sources */,
 				953650F22C6F694200F58D13 /* BaseViewController.swift in Sources */,
+				953651392C6F740100F58D13 /* ImageLiteral.swift in Sources */,
 				953651322C6F6E3700F58D13 /* LoadingView.swift in Sources */,
 				953651252C6F6CD300F58D13 /* KoreanMelonViewController.swift in Sources */,
 				953650F42C6F696200F58D13 /* BaseView.swift in Sources */,

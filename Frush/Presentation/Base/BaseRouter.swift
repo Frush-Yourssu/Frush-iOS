@@ -32,4 +32,8 @@ final class BaseRouter {
         let peachViewController = PeachViewController()
         viewController?.navigationController?.pushViewController(peachViewController, animated: true)
     }
+
+    func dismissViewController() {
+        viewController?.navigationController?.popViewController(animated: true)
+    }
 }
