@@ -51,6 +51,7 @@
 		95778AFF2C6FB0D0004BB616 /* ResultContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95778AFE2C6FB0D0004BB616 /* ResultContentView.swift */; };
 		95778B012C6FB0E3004BB616 /* ResultStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95778B002C6FB0E3004BB616 /* ResultStackView.swift */; };
 		95778B032C6FB0FC004BB616 /* ResultProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95778B022C6FB0FC004BB616 /* ResultProgressView.swift */; };
+		95778B0C2C6FB36A004BB616 /* UILabel+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95778B0B2C6FB36A004BB616 /* UILabel+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -94,6 +95,7 @@
 		95778AFE2C6FB0D0004BB616 /* ResultContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultContentView.swift; sourceTree = "<group>"; };
 		95778B002C6FB0E3004BB616 /* ResultStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultStackView.swift; sourceTree = "<group>"; };
 		95778B022C6FB0FC004BB616 /* ResultProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultProgressView.swift; sourceTree = "<group>"; };
+		95778B0B2C6FB36A004BB616 /* UILabel+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -184,6 +186,7 @@
 			isa = PBXGroup;
 			children = (
 				9536513E2C6F762F00F58D13 /* UIColor+Extension.swift */,
+				95778B0B2C6FB36A004BB616 /* UILabel+Extension.swift */,
 				953651512C6F885D00F58D13 /* UIStackView+Extension.swift */,
 				953651402C6F763700F58D13 /* UIButton+Extension.swift */,
 				953651372C6F73F900F58D13 /* Literal */,
@@ -424,6 +427,7 @@
 				953651212C6F6CC200F58D13 /* PeachViewController.swift in Sources */,
 				9536511D2C6F6CB200F58D13 /* WaterMelonViewController.swift in Sources */,
 				95778B012C6FB0E3004BB616 /* ResultStackView.swift in Sources */,
+				95778B0C2C6FB36A004BB616 /* UILabel+Extension.swift in Sources */,
 				953650F62C6F696E00F58D13 /* BaseButton.swift in Sources */,
 				953651412C6F763700F58D13 /* UIButton+Extension.swift in Sources */,
 				953650DC2C6F624F00F58D13 /* SceneDelegate.swift in Sources */,
