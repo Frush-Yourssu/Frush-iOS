@@ -10,23 +10,24 @@ import UIKit
 final class MainView: BaseView {
 
     // MARK: UI Components
-    private let waterMelonButton = BaseButton().then {
-        $0.setTitle("수박", for: .normal)
-        $0.setTitleColor(.black, for: .normal)
-        $0.backgroundColor = .lightGray
+    private let guideLabel = UILabel().then {
+        $0.text = "프루시에서\n맛있는 과일을 골라보세요!"
+        $0.textColor = .black
+        $0.font = UIFont.systemFont(ofSize: 18, weight: .semibold)
+        $0.textAlignment = .left
+        $0.numberOfLines = 2
     }
 
-    private let koreanMelonButton = BaseButton().then {
-        $0.setTitle("참외", for: .normal)
-        $0.setTitleColor(.black, for: .normal)
-        $0.backgroundColor = .lightGray
+    private let frushButtonStackView = UIStackView().then {
+        $0.axis = .vertical
+        $0.spacing = 36
+        $0.distribution = .fillEqually
     }
 
-    private let peachButton = BaseButton().then {
-        $0.setTitle("복숭아", for: .normal)
-        $0.setTitleColor(.black, for: .normal)
-        $0.backgroundColor = .lightGray
-    }
+    private var buttonConfiguration = BaseButton.Configuration.plain()
+    private let waterMelonButton = BaseButton()
+    private let koreanMelonButton = BaseButton()
+    private let peachButton = BaseButton()
 
     // MARK: Properties
     var tapWaterMelonButton: (() -> Void)?
@@ -35,11 +36,14 @@ final class MainView: BaseView {
 
     // MARK: Configuration
     override func configureSubviews() {
-        super.configureSubviews()
+        setButtonConfiguration()
 
-        addSubview(waterMelonButton)
-        addSubview(koreanMelonButton)
-        addSubview(peachButton)
+        addSubview(guideLabel)
+        addSubview(frushButtonStackView)
+
+        frushButtonStackView.addArrangedSubviews(waterMelonButton,
+                                                 koreanMelonButton,
+                                                 peachButton)
 
         waterMelonButton.addTarget(self, action: #selector(handleWaterMelonButtonEvent), for: .touchUpInside)
         koreanMelonButton.addTarget(self, action: #selector(handleKoreanMelonButtonEvent), for: .touchUpInside)
@@ -48,27 +52,15 @@ final class MainView: BaseView {
 
     // MARK: Layout
     override func makeConstraints() {
-        super.makeConstraints()
-
-        waterMelonButton.snp.makeConstraints {
-            $0.top.equalTo(safeAreaLayoutGuide).inset(30)
-            $0.centerX.equalToSuperview()
-            $0.width.equalTo(261)
-            $0.height.equalTo(100)
+        guideLabel.snp.makeConstraints {
+            $0.top.equalTo(safeAreaLayoutGuide).inset(52)
+            $0.leading.equalToSuperview()
         }
 
-        koreanMelonButton.snp.makeConstraints {
-            $0.top.equalTo(waterMelonButton.snp.bottom).offset(30)
-            $0.centerX.equalToSuperview()
-            $0.width.equalTo(261)
-            $0.height.equalTo(100)
-        }
-
-        peachButton.snp.makeConstraints {
-            $0.top.equalTo(koreanMelonButton.snp.bottom).offset(30)
-            $0.centerX.equalToSuperview()
-            $0.width.equalTo(261)
-            $0.height.equalTo(100)
+        frushButtonStackView.snp.makeConstraints {
+            $0.top.equalTo(guideLabel.snp.bottom).offset(24)
+            $0.horizontalEdges.equalToSuperview()
+            $0.height.equalTo(462)
         }
     }
 
@@ -83,5 +75,30 @@ final class MainView: BaseView {
 
     @objc private func handlePeachButtonEvent() {
         tapPeachButton?()
+    }
+}
+
+extension MainView {
+    func configureButton(_ button: UIButton, title: String, image: UIImage) {
+        var attributedTitle = AttributedString(title)
+        attributedTitle.font = .systemFont(ofSize: 22, weight: .bold)
+        attributedTitle.foregroundColor = UIColor.black
+
+        var config = buttonConfiguration
+        config.attributedTitle = attributedTitle
+        config.image = image
+        config.imagePadding = 74
+        config.imagePlacement = .trailing
+        config.contentInsets = NSDirectionalEdgeInsets(top: 0, leading: 70, bottom: 0, trailing: 20)
+        config.background.backgroundColor = .lightOrange
+        config.background.cornerRadius = 10
+
+        button.configuration = config
+    }
+
+    func setButtonConfiguration() {
+        configureButton(waterMelonButton, title: "수박", image: FrushImage.waterMelon)
+        configureButton(koreanMelonButton, title: "참외", image: FrushImage.koreanMelon)
+        configureButton(peachButton, title: "복숭아", image: FrushImage.peach)
     }
 }
