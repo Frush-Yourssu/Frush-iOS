@@ -35,6 +35,11 @@ final class FirstStepViewController: BaseViewController {
             guard let self else { return }
             router.dismissViewController()
         }
+
+        firstStepView.tapCameraButton = { [weak self] in
+            guard let self else { return }
+            router.presentCameraViewController()
+        }
     }
 
     // MARK: Layout
