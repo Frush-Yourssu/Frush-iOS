@@ -43,13 +43,13 @@ final class BaseRouter {
         viewController?.navigationController?.pushViewController(cameraViewController, animated: true)
     }
 
-    func presentLoadingViewController() {
-        let loadingViewController = LoadingViewController()
+    func presentLoadingViewController(category: String) {
+        let loadingViewController = LoadingViewController(category: category)
         viewController?.navigationController?.pushViewController(loadingViewController, animated: true)
     }
 
-    func presentResultViewController() {
-        let resultViewController = ResultViewController()
+    func presentResultViewController(category: String) {
+        let resultViewController = ResultViewController(category: category)
         viewController?.navigationController?.pushViewController(resultViewController, animated: true)
     }
 

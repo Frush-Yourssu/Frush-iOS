@@ -61,6 +61,7 @@
 		95778B2C2C6FE15D004BB616 /* loading_animation.json in Resources */ = {isa = PBXBuildFile; fileRef = 95778B2B2C6FE15D004BB616 /* loading_animation.json */; };
 		95778B2F2C6FE3BB004BB616 /* FrushView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95778B2E2C6FE3BB004BB616 /* FrushView.swift */; };
 		95778B312C6FE3C3004BB616 /* FrushViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95778B302C6FE3C3004BB616 /* FrushViewController.swift */; };
+		95778B372C700527004BB616 /* ResultData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95778B362C700527004BB616 /* ResultData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -113,6 +114,7 @@
 		95778B2B2C6FE15D004BB616 /* loading_animation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = loading_animation.json; sourceTree = "<group>"; };
 		95778B2E2C6FE3BB004BB616 /* FrushView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrushView.swift; sourceTree = "<group>"; };
 		95778B302C6FE3C3004BB616 /* FrushViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrushViewController.swift; sourceTree = "<group>"; };
+		95778B362C700527004BB616 /* ResultData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -242,6 +244,7 @@
 				95778B112C6FBF85004BB616 /* TargetType+Extension.swift */,
 				95778B152C6FBFA4004BB616 /* NetworkService.swift */,
 				95778B172C6FBFB8004BB616 /* ErrorResponse.swift */,
+				95778B362C700527004BB616 /* ResultData.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -469,6 +472,7 @@
 				953650DC2C6F624F00F58D13 /* SceneDelegate.swift in Sources */,
 				9536514A2C6F7AF300F58D13 /* SecondStepView.swift in Sources */,
 				953651462C6F7AE600F58D13 /* FirstStepView.swift in Sources */,
+				95778B372C700527004BB616 /* ResultData.swift in Sources */,
 				953651282C6F6DD400F58D13 /* CameraView.swift in Sources */,
 				953650F82C6F698400F58D13 /* AppDependency.swift in Sources */,
 				95778B162C6FBFA4004BB616 /* NetworkService.swift in Sources */,
@@ -621,7 +625,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = C9XX799UJH;
+				DEVELOPMENT_TEAM = 4P6BZ8CR69;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Frush/Support/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -648,7 +652,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = C9XX799UJH;
+				DEVELOPMENT_TEAM = 4P6BZ8CR69;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Frush/Support/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

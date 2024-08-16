@@ -14,6 +14,10 @@ final class CameraViewController: BaseViewController {
     let category: String
     let step: Int
     let layerImage: UIImage
+    let waterMelonDataList = FruitData.waterMelonDataList
+    let koreanMelonDataList = FruitData.koreanMelonDataList
+    let peachDataList = FruitData.peachDataList
+    var responseList: FrushResponse?
 
     // MARK: UI Components
     private let backButton = BaseButton().then {
@@ -160,55 +164,59 @@ extension CameraViewController: UINavigationControllerDelegate, UIImagePickerCon
             return
         }
 
-//        let encodedImage = image.base64
-//        postFruit(fruit: "WATER_MELON",
-//                  fruitPart: "WATER_MELON_CIRCULAR",
-//                  image: encodedImage)
+        let encodedImage = image.base64
+
         picker.dismiss(animated: true, completion: nil)
 
         switch category {
         case "waterMelon":
             switch step {
             case 1:
-                router.presentSecondStepViewController(
-                    guideText: "동그란 수박이 맛있다!",
-                    frushImage: FrushImage.waterMelonStep2)
+                postFruit(fruit: waterMelonDataList[0].fruit,
+                          fruitPart: waterMelonDataList[0].fruitPart,
+                          image: encodedImage)
             case 2:
-                router.presentThirdStepViewController(
-                    guideText: "줄무늬가 뚜렷한 수박이 맛있다!",
-                    frushImage: FrushImage.waterMelonStep3)
+                postFruit(fruit: waterMelonDataList[1].fruit,
+                          fruitPart: waterMelonDataList[1].fruitPart,
+                          image: encodedImage)
             case 3:
-                router.presentLoadingViewController()
+                postFruit(fruit: waterMelonDataList[2].fruit,
+                          fruitPart: waterMelonDataList[2].fruitPart,
+                          image: encodedImage)
             default:
                 return
             }
         case "koreanMelon":
             switch step {
             case 1:
-                router.presentSecondStepViewController(
-                    guideText: "타원형 참외가 맛있다!",
-                    frushImage: FrushImage.koreanMelonStep2)
+                postFruit(fruit: koreanMelonDataList[0].fruit,
+                          fruitPart: koreanMelonDataList[0].fruitPart,
+                          image: encodedImage)
             case 2:
-                router.presentThirdStepViewController(
-                    guideText: "상처가 없는 참외가 맛있다!",
-                    frushImage: FrushImage.koreanMelonStep3)
+                postFruit(fruit: koreanMelonDataList[1].fruit,
+                          fruitPart: koreanMelonDataList[1].fruitPart,
+                          image: encodedImage)
             case 3:
-                router.presentLoadingViewController()
+                postFruit(fruit: koreanMelonDataList[2].fruit,
+                          fruitPart: koreanMelonDataList[2].fruitPart,
+                          image: encodedImage)
             default:
                 return
             }
         case "peach":
             switch step {
             case 1:
-                router.presentSecondStepViewController(
-                    guideText: "복숭아 골이 선명하고\n좌우 대칭이어야 맛있다!",
-                    frushImage: FrushImage.peachStep2)
+                postFruit(fruit: peachDataList[0].fruit,
+                          fruitPart: peachDataList[0].fruitPart,
+                          image: encodedImage)
             case 2:
-                router.presentThirdStepViewController(
-                    guideText: "상처가 없는 복숭아가 맛있다!",
-                    frushImage: FrushImage.peachStep3)
+                postFruit(fruit: peachDataList[1].fruit,
+                          fruitPart: peachDataList[1].fruitPart,
+                          image: encodedImage)
             case 3:
-                router.presentLoadingViewController()
+                postFruit(fruit: peachDataList[2].fruit,
+                          fruitPart: peachDataList[2].fruitPart,
+                          image: encodedImage)
             default:
                 return
             }
@@ -223,6 +231,60 @@ extension CameraViewController: UINavigationControllerDelegate, UIImagePickerCon
     }
 }
 
+extension CameraViewController {
+    private func presentNextViewController() {
+        switch category {
+        case "waterMelon":
+            switch step {
+            case 1:
+                router.presentSecondStepViewController(
+                    guideText: "동그란 수박이 맛있다!",
+                    frushImage: FrushImage.waterMelonStep2)
+            case 2:
+                router.presentThirdStepViewController(
+                    guideText: "줄무늬가 뚜렷한 수박이 맛있다!",
+                    frushImage: FrushImage.waterMelonStep3)
+            case 3:
+                router.presentLoadingViewController(category: category)
+            default:
+                return
+            }
+        case "koreanMelon":
+            switch step {
+            case 1:
+                router.presentSecondStepViewController(
+                    guideText: "타원형 참외가 맛있다!",
+                    frushImage: FrushImage.koreanMelonStep2)
+            case 2:
+                router.presentThirdStepViewController(
+                    guideText: "상처가 없는 참외가 맛있다!",
+                    frushImage: FrushImage.koreanMelonStep3)
+            case 3:
+                router.presentLoadingViewController(category: category)
+            default:
+                return
+            }
+        case "peach":
+            switch step {
+            case 1:
+                router.presentSecondStepViewController(
+                    guideText: "복숭아 골이 선명하고\n좌우 대칭이어야 맛있다!",
+                    frushImage: FrushImage.peachStep2)
+            case 2:
+                router.presentThirdStepViewController(
+                    guideText: "상처가 없는 복숭아가 맛있다!",
+                    frushImage: FrushImage.peachStep3)
+            case 3:
+                router.presentLoadingViewController(category: category)
+            default:
+                return
+            }
+        default:
+            return
+        }
+    }
+}
+
 // MARK: Networking
 extension CameraViewController {
     private func postFruit(fruit: String, fruitPart: String, image: String) {
@@ -230,11 +292,13 @@ extension CameraViewController {
         NetworkService.shared.frush.postFruit(fruit: fruit,
                                               fruitPart: fruitPart,
                                               image: image)
-        { result in
+        { [self] result in
             switch result {
             case .success(let response):
                 guard let data = response as? FrushResponse else { return }
                 print("🍉 postFruit success: " + "\(data)")
+                FrushRealData.frushRealDataList.append(data)
+                presentNextViewController()
             case .requestErr(let errorResponse):
                 dump(errorResponse)
                 guard let data = errorResponse as? ErrorResponse else { return }
@@ -249,3 +313,4 @@ extension CameraViewController {
         }
     }
 }
+

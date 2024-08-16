@@ -9,6 +9,8 @@ import UIKit
 
 final class ResultViewController: BaseViewController {
 
+    let category: String
+
     // MARK: UI Components
     private let resultView = ResultView()
 
@@ -18,6 +20,17 @@ final class ResultViewController: BaseViewController {
 
     // MARK: Environment
     private let router = BaseRouter()
+
+    // MARK: Init
+    init(category: String) {
+        self.category = category
+        super.init(nibName: nil, bundle: nil)
+        setData(category: category)
+    }
+
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
 
     // MARK: Life Cycle
     override func viewDidLoad() {
@@ -50,5 +63,9 @@ final class ResultViewController: BaseViewController {
         navigationItem.titleView = UIImageView(image: FrushImage.frushLogo)
         navigationItem.hidesBackButton = true
         navigationItem.rightBarButtonItem = UIBarButtonItem(customView: dismissButton)
+    }
+
+    private func setData(category: String) {
+        resultView.setData(category: category)
     }
 }

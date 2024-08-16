@@ -9,6 +9,8 @@ import UIKit
 
 final class LoadingViewController: BaseViewController {
 
+    let category: String
+
     // MARK: UI Components
     private let loadingView = LoadingView()
 
@@ -23,13 +25,23 @@ final class LoadingViewController: BaseViewController {
     // MARK: Environment
     private let router = BaseRouter()
 
+    // MARK: Init
+    init(category: String) {
+        self.category = category
+        super.init(nibName: nil, bundle: nil)
+    }
+
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+
     // MARK: Configuration
     override func configureSubviews() {
         view.addSubview(loadingView)
 
         loadingView.tapNextButton = { [weak self] in
             guard let self else { return }
-            router.presentResultViewController()
+            router.presentResultViewController(category: category)
         }
     }
 
