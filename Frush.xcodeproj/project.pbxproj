@@ -55,6 +55,7 @@
 		95778B082C6FB2A7004BB616 /* GmarketSansTTFLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 95778B052C6FB2A7004BB616 /* GmarketSansTTFLight.ttf */; };
 		95778B092C6FB2A7004BB616 /* GmarketSansTTFMedium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 95778B062C6FB2A7004BB616 /* GmarketSansTTFMedium.ttf */; };
 		95778B0C2C6FB36A004BB616 /* UILabel+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95778B0B2C6FB36A004BB616 /* UILabel+Extension.swift */; };
+		95778B272C6FD8D4004BB616 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95778B262C6FD8D4004BB616 /* UIImage+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -102,6 +103,7 @@
 		95778B052C6FB2A7004BB616 /* GmarketSansTTFLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = GmarketSansTTFLight.ttf; sourceTree = "<group>"; };
 		95778B062C6FB2A7004BB616 /* GmarketSansTTFMedium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = GmarketSansTTFMedium.ttf; sourceTree = "<group>"; };
 		95778B0B2C6FB36A004BB616 /* UILabel+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Extension.swift"; sourceTree = "<group>"; };
+		95778B262C6FD8D4004BB616 /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -197,6 +199,7 @@
 				953651512C6F885D00F58D13 /* UIStackView+Extension.swift */,
 				953651402C6F763700F58D13 /* UIButton+Extension.swift */,
 				953651372C6F73F900F58D13 /* Literal */,
+				95778B262C6FD8D4004BB616 /* UIImage+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -430,6 +433,7 @@
 				95778B032C6FB0FC004BB616 /* ResultProgressView.swift in Sources */,
 				9536511B2C6F6CAD00F58D13 /* WaterMelonView.swift in Sources */,
 				9536514E2C6F7B0000F58D13 /* ThirdStepView.swift in Sources */,
+				95778B272C6FD8D4004BB616 /* UIImage+Extension.swift in Sources */,
 				9536512D2C6F6E0800F58D13 /* ResultView.swift in Sources */,
 				95778AFF2C6FB0D0004BB616 /* ResultContentView.swift in Sources */,
 				953650F22C6F694200F58D13 /* BaseViewController.swift in Sources */,
@@ -605,7 +609,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = C9XX799UJH;
+				DEVELOPMENT_TEAM = 4P6BZ8CR69;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Frush/Support/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -632,7 +636,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = C9XX799UJH;
+				DEVELOPMENT_TEAM = 4P6BZ8CR69;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Frush/Support/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
