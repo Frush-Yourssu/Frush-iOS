@@ -17,8 +17,6 @@
 		953650F62C6F696E00F58D13 /* BaseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953650F52C6F696E00F58D13 /* BaseButton.swift */; };
 		953650F82C6F698400F58D13 /* AppDependency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953650F72C6F698400F58D13 /* AppDependency.swift */; };
 		953650FB2C6F69D200F58D13 /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = 953650FA2C6F69D200F58D13 /* Then */; };
-		953650FE2C6F69DC00F58D13 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 953650FD2C6F69DC00F58D13 /* SnapKit */; };
-		953651002C6F69DC00F58D13 /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 953650FF2C6F69DC00F58D13 /* SnapKit-Dynamic */; };
 		953651032C6F6A0100F58D13 /* CombineMoya in Frameworks */ = {isa = PBXBuildFile; productRef = 953651022C6F6A0100F58D13 /* CombineMoya */; };
 		953651052C6F6A0100F58D13 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 953651042C6F6A0100F58D13 /* Moya */; };
 		953651072C6F6A0100F58D13 /* ReactiveMoya in Frameworks */ = {isa = PBXBuildFile; productRef = 953651062C6F6A0100F58D13 /* ReactiveMoya */; };
@@ -48,6 +46,7 @@
 		9536514E2C6F7B0000F58D13 /* ThirdStepView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9536514D2C6F7B0000F58D13 /* ThirdStepView.swift */; };
 		953651502C6F7B0900F58D13 /* ThirdStepViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9536514F2C6F7B0900F58D13 /* ThirdStepViewController.swift */; };
 		953651522C6F885D00F58D13 /* UIStackView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953651512C6F885D00F58D13 /* UIStackView+Extension.swift */; };
+		9536515E2C6F9BBC00F58D13 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 9536515D2C6F9BBC00F58D13 /* SnapKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -95,11 +94,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				953650FB2C6F69D200F58D13 /* Then in Frameworks */,
-				953650FE2C6F69DC00F58D13 /* SnapKit in Frameworks */,
 				953651032C6F6A0100F58D13 /* CombineMoya in Frameworks */,
 				953651052C6F6A0100F58D13 /* Moya in Frameworks */,
+				9536515E2C6F9BBC00F58D13 /* SnapKit in Frameworks */,
 				953651092C6F6A0100F58D13 /* RxMoya in Frameworks */,
-				953651002C6F69DC00F58D13 /* SnapKit-Dynamic in Frameworks */,
 				953651072C6F6A0100F58D13 /* ReactiveMoya in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -327,12 +325,11 @@
 			name = Frush;
 			packageProductDependencies = (
 				953650FA2C6F69D200F58D13 /* Then */,
-				953650FD2C6F69DC00F58D13 /* SnapKit */,
-				953650FF2C6F69DC00F58D13 /* SnapKit-Dynamic */,
 				953651022C6F6A0100F58D13 /* CombineMoya */,
 				953651042C6F6A0100F58D13 /* Moya */,
 				953651062C6F6A0100F58D13 /* ReactiveMoya */,
 				953651082C6F6A0100F58D13 /* RxMoya */,
+				9536515D2C6F9BBC00F58D13 /* SnapKit */,
 			);
 			productName = Frush;
 			productReference = 953650D62C6F624F00F58D13 /* Frush.app */;
@@ -364,8 +361,8 @@
 			mainGroup = 953650CD2C6F624F00F58D13;
 			packageReferences = (
 				953650F92C6F69D200F58D13 /* XCRemoteSwiftPackageReference "Then" */,
-				953650FC2C6F69DC00F58D13 /* XCRemoteSwiftPackageReference "SnapKit" */,
 				953651012C6F6A0100F58D13 /* XCRemoteSwiftPackageReference "Moya" */,
+				9536515C2C6F9BBC00F58D13 /* XCRemoteSwiftPackageReference "SnapKit" */,
 			);
 			productRefGroup = 953650D72C6F624F00F58D13 /* Products */;
 			projectDirPath = "";
@@ -568,6 +565,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4P6BZ8CR69;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Frush/Support/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -594,6 +592,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4P6BZ8CR69;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Frush/Support/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -645,20 +644,20 @@
 				minimumVersion = 3.0.0;
 			};
 		};
-		953650FC2C6F69DC00F58D13 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 5.7.1;
-			};
-		};
 		953651012C6F6A0100F58D13 /* XCRemoteSwiftPackageReference "Moya" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Moya/Moya.git";
 			requirement = {
 				kind = upToNextMajorVersion;
 				minimumVersion = 15.0.3;
+			};
+		};
+		9536515C2C6F9BBC00F58D13 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
@@ -668,16 +667,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 953650F92C6F69D200F58D13 /* XCRemoteSwiftPackageReference "Then" */;
 			productName = Then;
-		};
-		953650FD2C6F69DC00F58D13 /* SnapKit */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 953650FC2C6F69DC00F58D13 /* XCRemoteSwiftPackageReference "SnapKit" */;
-			productName = SnapKit;
-		};
-		953650FF2C6F69DC00F58D13 /* SnapKit-Dynamic */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 953650FC2C6F69DC00F58D13 /* XCRemoteSwiftPackageReference "SnapKit" */;
-			productName = "SnapKit-Dynamic";
 		};
 		953651022C6F6A0100F58D13 /* CombineMoya */ = {
 			isa = XCSwiftPackageProductDependency;
@@ -698,6 +687,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 953651012C6F6A0100F58D13 /* XCRemoteSwiftPackageReference "Moya" */;
 			productName = RxMoya;
+		};
+		9536515D2C6F9BBC00F58D13 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9536515C2C6F9BBC00F58D13 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
