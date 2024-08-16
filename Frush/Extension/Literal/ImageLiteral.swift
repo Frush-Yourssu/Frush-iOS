@@ -12,6 +12,9 @@ public enum FrushImage {
     public static var firstProgressBar: UIImage { .load(name: "first_progress_bar") }
     public static var secondProgressBar: UIImage { .load(name: "second_progress_bar") }
     public static var thirdProgressBar: UIImage { .load(name: "third_progress_bar") }
+    public static var waterMelon: UIImage { .load(name: "water_melon") }
+    public static var koreanMelon: UIImage { .load(name: "korean_melon") }
+    public static var peach: UIImage { .load(name: "peach") }
 }
 
 public enum FrushButton {
