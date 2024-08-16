@@ -24,6 +24,8 @@ final class ResultView: BaseView {
 
     private let descriptLabel = UILabel().then {
         $0.textColor = .black
+        $0.textAlignment = .center
+        $0.numberOfLines = 2
         $0.font = UIFont.systemFont(ofSize: 16, weight: .medium)
     }
 
