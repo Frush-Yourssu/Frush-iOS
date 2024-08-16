@@ -14,6 +14,12 @@ final class FirstStepView: BaseView {
         $0.image = FrushImage.firstProgressBar
     }
 
+    private let guideLabel = UILabel().then {
+        $0.text = "배꼽이 작을수록 맛있다!"
+        $0.textColor = .black
+        $0.font = UIFont.systemFont(ofSize: 20, weight: .bold)
+    }
+
     private let cameraButton = BaseButton().then {
         $0.setDefaultButton("사진찍기")
     }
@@ -24,6 +30,7 @@ final class FirstStepView: BaseView {
     // MARK: Configuration
     override func configureSubviews() {
         addSubview(progressBarImageView)
+        addSubview(guideLabel)
         addSubview(cameraButton)
 
         cameraButton.addTarget(self, action: #selector(handleCameraButtonEvent), for: .touchUpInside)
@@ -34,6 +41,11 @@ final class FirstStepView: BaseView {
         progressBarImageView.snp.makeConstraints {
             $0.top.equalTo(safeAreaLayoutGuide).inset(12)
             $0.width.equalToSuperview()
+        }
+
+        guideLabel.snp.makeConstraints {
+            $0.top.equalTo(progressBarImageView.snp.bottom).offset(40)
+            $0.centerX.equalToSuperview()
         }
 
         cameraButton.snp.makeConstraints {
