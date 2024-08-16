@@ -38,14 +38,14 @@ final class MainViewController: BaseViewController {
             router.presentWaterMelonViewController()
         }
 
-        mainView.tapPeachButton = { [weak self] in
-            guard let self else { return }
-            router.presentPeachViewController()
-        }
-
         mainView.tapKoreanMelonButton = { [weak self] in
             guard let self else { return }
             router.presentKoreanMelonViewController()
+        }
+
+        mainView.tapPeachButton = { [weak self] in
+            guard let self else { return }
+            router.presentPeachViewController()
         }
     }
 
