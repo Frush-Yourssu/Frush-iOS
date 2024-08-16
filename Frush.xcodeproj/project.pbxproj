@@ -39,6 +39,7 @@
 		953651322C6F6E3700F58D13 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953651312C6F6E3700F58D13 /* LoadingView.swift */; };
 		953651342C6F6E3F00F58D13 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953651332C6F6E3F00F58D13 /* LoadingViewController.swift */; };
 		953651392C6F740100F58D13 /* ImageLiteral.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953651382C6F740100F58D13 /* ImageLiteral.swift */; };
+		9536513F2C6F762F00F58D13 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9536513E2C6F762F00F58D13 /* UIColor+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -69,6 +70,7 @@
 		953651312C6F6E3700F58D13 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		953651332C6F6E3F00F58D13 /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
 		953651382C6F740100F58D13 /* ImageLiteral.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLiteral.swift; sourceTree = "<group>"; };
+		9536513E2C6F762F00F58D13 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,6 +161,7 @@
 		9536510D2C6F6AAA00F58D13 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				9536513E2C6F762F00F58D13 /* UIColor+Extension.swift */,
 				953651372C6F73F900F58D13 /* Literal */,
 			);
 			path = Extension;
@@ -351,6 +354,7 @@
 				953651322C6F6E3700F58D13 /* LoadingView.swift in Sources */,
 				953651252C6F6CD300F58D13 /* KoreanMelonViewController.swift in Sources */,
 				953650F42C6F696200F58D13 /* BaseView.swift in Sources */,
+				9536513F2C6F762F00F58D13 /* UIColor+Extension.swift in Sources */,
 				953651232C6F6CCD00F58D13 /* KoreanMelonView.swift in Sources */,
 				953650DA2C6F624F00F58D13 /* AppDelegate.swift in Sources */,
 				953651212C6F6CC200F58D13 /* PeachViewController.swift in Sources */,
