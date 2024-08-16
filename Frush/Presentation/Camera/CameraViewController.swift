@@ -54,7 +54,7 @@ final class CameraViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         openCamera()
-
+        setNavigationItem()
         router.viewController = self
     }
 
@@ -215,6 +215,11 @@ extension CameraViewController: UINavigationControllerDelegate, UIImagePickerCon
         default:
             return
         }
+    }
+
+    // MARK: Navigation Item
+    private func setNavigationItem() {
+        navigationItem.hidesBackButton = true
     }
 }
 
