@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Lottie
 
 final class LoadingView: BaseView {
 
@@ -16,11 +17,17 @@ final class LoadingView: BaseView {
         $0.font = UIFont.systemFont(ofSize: 20, weight: .bold)
     }
 
+    private let loadingAnimationView = LottieAnimationView(name: "loading_animation")
+
     // MARK: Properties
 
     // MARK: Configuration
     override func configureSubviews() {
         addSubview(loadingLabel)
+        addSubview(loadingAnimationView)
+        
+        loadingAnimationView.play()
+        loadingAnimationView.loopMode = .loop
     }
 
     // MARK: Layout
@@ -28,6 +35,12 @@ final class LoadingView: BaseView {
         loadingLabel.snp.makeConstraints {
             $0.top.equalTo(safeAreaLayoutGuide).inset(56)
             $0.centerX.equalToSuperview()
+        }
+
+        loadingAnimationView.snp.makeConstraints {
+            $0.top.equalTo(loadingLabel.snp.bottom).offset(117)
+            $0.centerX.equalToSuperview()
+            $0.height.width.equalTo(300)
         }
     }
 
