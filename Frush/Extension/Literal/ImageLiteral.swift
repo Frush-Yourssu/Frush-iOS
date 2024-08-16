@@ -8,6 +8,10 @@
 import UIKit
 
 public enum FrushImage {
+    public static var frushLogo: UIImage { .load(name: "frush_logo") }
+    public static var firstProgressBar: UIImage { .load(name: "first_progress_bar") }
+    public static var secondProgressBar: UIImage { .load(name: "second_progress_bar") }
+    public static var thirdProgressBar: UIImage { .load(name: "third_progress_bar") }
 }
 
 public enum FrushButton {
