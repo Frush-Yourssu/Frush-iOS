@@ -31,12 +31,17 @@ public enum FrushImage {
 
     public static var koreanMelonStep1: UIImage { .load(name: "korean_melon_step_1") }
     public static var koreanMelonStep2: UIImage { .load(name: "korean_melon_step_2") }
+    public static var koreanMelonStep3: UIImage { .load(name: "korean_melon_step_3") }
 
     public static var peach: UIImage { .load(name: "peach") }
     public static var peach1: UIImage { .load(name: "peach_1") }
     public static var peach2: UIImage { .load(name: "peach_2") }
     public static var peach3: UIImage { .load(name: "peach_3") }
     public static var peach4: UIImage { .load(name: "peach_4") }
+
+    public static var peachStep1: UIImage { .load(name: "peach_step_1") }
+    public static var peachStep2: UIImage { .load(name: "peach_step_2") }
+    public static var peachStep3: UIImage { .load(name: "peach_step_3") }
 }
 
 public enum FrushButton {
