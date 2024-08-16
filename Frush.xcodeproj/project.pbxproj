@@ -10,9 +10,20 @@
 		953650DA2C6F624F00F58D13 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953650D92C6F624F00F58D13 /* AppDelegate.swift */; };
 		953650DC2C6F624F00F58D13 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953650DB2C6F624F00F58D13 /* SceneDelegate.swift */; };
 		953650DE2C6F624F00F58D13 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953650DD2C6F624F00F58D13 /* ViewController.swift */; };
-		953650E12C6F624F00F58D13 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 953650DF2C6F624F00F58D13 /* Main.storyboard */; };
 		953650E32C6F625100F58D13 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 953650E22C6F625100F58D13 /* Assets.xcassets */; };
 		953650E62C6F625100F58D13 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 953650E42C6F625100F58D13 /* LaunchScreen.storyboard */; };
+		953650F22C6F694200F58D13 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953650F12C6F694200F58D13 /* BaseViewController.swift */; };
+		953650F42C6F696200F58D13 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953650F32C6F696200F58D13 /* BaseView.swift */; };
+		953650F62C6F696E00F58D13 /* BaseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953650F52C6F696E00F58D13 /* BaseButton.swift */; };
+		953650F82C6F698400F58D13 /* AppDependency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953650F72C6F698400F58D13 /* AppDependency.swift */; };
+		953650FB2C6F69D200F58D13 /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = 953650FA2C6F69D200F58D13 /* Then */; };
+		953650FE2C6F69DC00F58D13 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 953650FD2C6F69DC00F58D13 /* SnapKit */; };
+		953651002C6F69DC00F58D13 /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 953650FF2C6F69DC00F58D13 /* SnapKit-Dynamic */; };
+		953651032C6F6A0100F58D13 /* CombineMoya in Frameworks */ = {isa = PBXBuildFile; productRef = 953651022C6F6A0100F58D13 /* CombineMoya */; };
+		953651052C6F6A0100F58D13 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 953651042C6F6A0100F58D13 /* Moya */; };
+		953651072C6F6A0100F58D13 /* ReactiveMoya in Frameworks */ = {isa = PBXBuildFile; productRef = 953651062C6F6A0100F58D13 /* ReactiveMoya */; };
+		953651092C6F6A0100F58D13 /* RxMoya in Frameworks */ = {isa = PBXBuildFile; productRef = 953651082C6F6A0100F58D13 /* RxMoya */; };
+		953651112C6F6AF900F58D13 /* BaseRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953651102C6F6AF900F58D13 /* BaseRouter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,10 +31,14 @@
 		953650D92C6F624F00F58D13 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		953650DB2C6F624F00F58D13 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		953650DD2C6F624F00F58D13 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		953650E02C6F624F00F58D13 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		953650E22C6F625100F58D13 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		953650E52C6F625100F58D13 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		953650E72C6F625100F58D13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		953650F12C6F694200F58D13 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		953650F32C6F696200F58D13 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		953650F52C6F696E00F58D13 /* BaseButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseButton.swift; sourceTree = "<group>"; };
+		953650F72C6F698400F58D13 /* AppDependency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDependency.swift; sourceTree = "<group>"; };
+		953651102C6F6AF900F58D13 /* BaseRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRouter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +46,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				953650FB2C6F69D200F58D13 /* Then in Frameworks */,
+				953650FE2C6F69DC00F58D13 /* SnapKit in Frameworks */,
+				953651032C6F6A0100F58D13 /* CombineMoya in Frameworks */,
+				953651052C6F6A0100F58D13 /* Moya in Frameworks */,
+				953651092C6F6A0100F58D13 /* RxMoya in Frameworks */,
+				953651002C6F69DC00F58D13 /* SnapKit-Dynamic in Frameworks */,
+				953651072C6F6A0100F58D13 /* ReactiveMoya in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,15 +78,75 @@
 		953650D82C6F624F00F58D13 /* Frush */ = {
 			isa = PBXGroup;
 			children = (
-				953650D92C6F624F00F58D13 /* AppDelegate.swift */,
-				953650DB2C6F624F00F58D13 /* SceneDelegate.swift */,
-				953650DD2C6F624F00F58D13 /* ViewController.swift */,
-				953650DF2C6F624F00F58D13 /* Main.storyboard */,
-				953650E22C6F625100F58D13 /* Assets.xcassets */,
+				9536510B2C6F6A7400F58D13 /* Support */,
+				9536510C2C6F6A9D00F58D13 /* Resource */,
+				9536510D2C6F6AAA00F58D13 /* Extension */,
+				9536510F2C6F6ABE00F58D13 /* Networking */,
+				9536510E2C6F6AB500F58D13 /* Presentation */,
+				9536510A2C6F6A0D00F58D13 /* App */,
 				953650E42C6F625100F58D13 /* LaunchScreen.storyboard */,
-				953650E72C6F625100F58D13 /* Info.plist */,
 			);
 			path = Frush;
+			sourceTree = "<group>";
+		};
+		953650F02C6F692F00F58D13 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				953650F12C6F694200F58D13 /* BaseViewController.swift */,
+				953650F52C6F696E00F58D13 /* BaseButton.swift */,
+				953650F32C6F696200F58D13 /* BaseView.swift */,
+				953651102C6F6AF900F58D13 /* BaseRouter.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		9536510A2C6F6A0D00F58D13 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				953650D92C6F624F00F58D13 /* AppDelegate.swift */,
+				953650F72C6F698400F58D13 /* AppDependency.swift */,
+				953650DB2C6F624F00F58D13 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		9536510B2C6F6A7400F58D13 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				953650E72C6F625100F58D13 /* Info.plist */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		9536510C2C6F6A9D00F58D13 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				953650E22C6F625100F58D13 /* Assets.xcassets */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		9536510D2C6F6AAA00F58D13 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		9536510E2C6F6AB500F58D13 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				953650DD2C6F624F00F58D13 /* ViewController.swift */,
+				953650F02C6F692F00F58D13 /* Base */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		9536510F2C6F6ABE00F58D13 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +165,15 @@
 			dependencies = (
 			);
 			name = Frush;
+			packageProductDependencies = (
+				953650FA2C6F69D200F58D13 /* Then */,
+				953650FD2C6F69DC00F58D13 /* SnapKit */,
+				953650FF2C6F69DC00F58D13 /* SnapKit-Dynamic */,
+				953651022C6F6A0100F58D13 /* CombineMoya */,
+				953651042C6F6A0100F58D13 /* Moya */,
+				953651062C6F6A0100F58D13 /* ReactiveMoya */,
+				953651082C6F6A0100F58D13 /* RxMoya */,
+			);
 			productName = Frush;
 			productReference = 953650D62C6F624F00F58D13 /* Frush.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +202,11 @@
 				Base,
 			);
 			mainGroup = 953650CD2C6F624F00F58D13;
+			packageReferences = (
+				953650F92C6F69D200F58D13 /* XCRemoteSwiftPackageReference "Then" */,
+				953650FC2C6F69DC00F58D13 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				953651012C6F6A0100F58D13 /* XCRemoteSwiftPackageReference "Moya" */,
+			);
 			productRefGroup = 953650D72C6F624F00F58D13 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,7 +223,6 @@
 			files = (
 				953650E62C6F625100F58D13 /* LaunchScreen.storyboard in Resources */,
 				953650E32C6F625100F58D13 /* Assets.xcassets in Resources */,
-				953650E12C6F624F00F58D13 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,22 +234,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				953650DE2C6F624F00F58D13 /* ViewController.swift in Sources */,
+				953650F22C6F694200F58D13 /* BaseViewController.swift in Sources */,
+				953650F42C6F696200F58D13 /* BaseView.swift in Sources */,
 				953650DA2C6F624F00F58D13 /* AppDelegate.swift in Sources */,
+				953650F62C6F696E00F58D13 /* BaseButton.swift in Sources */,
 				953650DC2C6F624F00F58D13 /* SceneDelegate.swift in Sources */,
+				953650F82C6F698400F58D13 /* AppDependency.swift in Sources */,
+				953651112C6F6AF900F58D13 /* BaseRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		953650DF2C6F624F00F58D13 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				953650E02C6F624F00F58D13 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		953650E42C6F625100F58D13 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -293,10 +385,9 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Frush/Info.plist;
+				INFOPLIST_FILE = Frush/Support/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -320,10 +411,9 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Frush/Info.plist;
+				INFOPLIST_FILE = Frush/Support/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -361,6 +451,71 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		953650F92C6F69D200F58D13 /* XCRemoteSwiftPackageReference "Then" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/devxoul/Then";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
+		953650FC2C6F69DC00F58D13 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
+		953651012C6F6A0100F58D13 /* XCRemoteSwiftPackageReference "Moya" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Moya/Moya.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 15.0.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		953650FA2C6F69D200F58D13 /* Then */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 953650F92C6F69D200F58D13 /* XCRemoteSwiftPackageReference "Then" */;
+			productName = Then;
+		};
+		953650FD2C6F69DC00F58D13 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 953650FC2C6F69DC00F58D13 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		953650FF2C6F69DC00F58D13 /* SnapKit-Dynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 953650FC2C6F69DC00F58D13 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = "SnapKit-Dynamic";
+		};
+		953651022C6F6A0100F58D13 /* CombineMoya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 953651012C6F6A0100F58D13 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = CombineMoya;
+		};
+		953651042C6F6A0100F58D13 /* Moya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 953651012C6F6A0100F58D13 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = Moya;
+		};
+		953651062C6F6A0100F58D13 /* ReactiveMoya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 953651012C6F6A0100F58D13 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = ReactiveMoya;
+		};
+		953651082C6F6A0100F58D13 /* RxMoya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 953651012C6F6A0100F58D13 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = RxMoya;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 953650CE2C6F624F00F58D13 /* Project object */;
 }
