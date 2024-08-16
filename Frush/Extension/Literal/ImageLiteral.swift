@@ -19,11 +19,18 @@ public enum FrushImage {
     public static var waterMelon3: UIImage { .load(name: "water_melon_3") }
     public static var waterMelon4: UIImage { .load(name: "water_melon_4") }
 
+    public static var waterMelonStep1: UIImage { .load(name: "water_melon_step_1") }
+    public static var waterMelonStep2: UIImage { .load(name: "water_melon_step_2") }
+    public static var waterMelonStep3: UIImage { .load(name: "water_melon_step_3") }
+
     public static var koreanMelon: UIImage { .load(name: "korean_melon") }
     public static var koreanMelon1: UIImage { .load(name: "korean_melon_1") }
     public static var koreanMelon2: UIImage { .load(name: "korean_melon_2") }
     public static var koreanMelon3: UIImage { .load(name: "korean_melon_3") }
     public static var koreanMelon4: UIImage { .load(name: "korean_melon_4") }
+
+    public static var koreanMelonStep1: UIImage { .load(name: "korean_melon_step_1") }
+    public static var koreanMelonStep2: UIImage { .load(name: "korean_melon_step_2") }
 
     public static var peach: UIImage { .load(name: "peach") }
     public static var peach1: UIImage { .load(name: "peach_1") }
