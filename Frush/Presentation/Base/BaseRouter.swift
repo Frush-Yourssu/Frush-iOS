@@ -48,6 +48,11 @@ final class BaseRouter {
         viewController?.navigationController?.pushViewController(loadingViewController, animated: true)
     }
 
+    func presentResultViewController() {
+        let resultViewController = ResultViewController()
+        viewController?.navigationController?.pushViewController(resultViewController, animated: true)
+    }
+
     func dismissViewController() {
         viewController?.navigationController?.popViewController(animated: true)
     }

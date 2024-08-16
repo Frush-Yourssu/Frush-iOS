@@ -19,15 +19,22 @@ final class LoadingView: BaseView {
 
     private let loadingAnimationView = LottieAnimationView(name: "loading_animation")
 
+    private let nextButton = BaseButton().then {
+        $0.setDefaultButton("결과 확인하기")
+    }
+
     // MARK: Properties
+    var tapNextButton: (() -> Void)?
 
     // MARK: Configuration
     override func configureSubviews() {
         addSubview(loadingLabel)
         addSubview(loadingAnimationView)
-        
-        loadingAnimationView.play()
-        loadingAnimationView.loopMode = .loop
+        addSubview(nextButton)
+
+        nextButton.addTarget(self, action: #selector(handleNextButtonEvent), for: .touchUpInside)
+
+        setLoadingViewAnimation()
     }
 
     // MARK: Layout
@@ -42,7 +49,20 @@ final class LoadingView: BaseView {
             $0.centerX.equalToSuperview()
             $0.height.width.equalTo(300)
         }
+
+        nextButton.snp.makeConstraints {
+            $0.bottom.equalTo(safeAreaLayoutGuide).inset(34)
+            $0.width.equalToSuperview()
+        }
     }
 
     // MARK: Event
+    @objc private func handleNextButtonEvent() {
+        tapNextButton?()
+    }
+
+    private func setLoadingViewAnimation() {
+        loadingAnimationView.play()
+        loadingAnimationView.loopMode = .loop
+    }
 }
