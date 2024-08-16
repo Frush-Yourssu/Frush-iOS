@@ -14,6 +14,8 @@ final class KoreanMelonViewController: BaseViewController {
         $0.setImage(FrushButton.backButton, for: .normal)
     }
 
+    private let koreanMelonView = KoreanMelonView()
+
     // MARK: Environment
     private let router = BaseRouter()
 
@@ -27,6 +29,8 @@ final class KoreanMelonViewController: BaseViewController {
 
     // MARK: Configuration
     override func configureSubviews() {
+        view.addSubview(koreanMelonView)
+
         backButton.tap = { [weak self] in
             guard let self else { return }
             router.dismissViewController()
@@ -35,11 +39,15 @@ final class KoreanMelonViewController: BaseViewController {
 
     // MARK: Layout
     override func makeConstraints() {
+        koreanMelonView.snp.makeConstraints {
+            $0.verticalEdges.equalToSuperview()
+            $0.horizontalEdges.equalToSuperview().inset(16)
+        }
     }
 
     // MARK: Navigation Item
     private func setNavigationItem() {
-        navigationItem.title = "참외"
+        navigationItem.titleView = UIImageView(image: FrushImage.frushLogo)
         navigationItem.leftBarButtonItem = UIBarButtonItem(customView: backButton)
     }
 }
