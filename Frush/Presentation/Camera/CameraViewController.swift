@@ -13,6 +13,7 @@ final class CameraViewController: BaseViewController {
 
     let category: String
     let step: Int
+    let layerImage: UIImage
 
     // MARK: UI Components
     private let backButton = BaseButton().then {
@@ -21,7 +22,7 @@ final class CameraViewController: BaseViewController {
 
     private let overlayView: UIImageView = {
         let overlayView = UIImageView()
-        overlayView.image = UIImage(named: "Ellipse 4")
+//        overlayView.image = self.layerImage
         overlayView.isHidden = true
         return overlayView
     }()
@@ -30,10 +31,15 @@ final class CameraViewController: BaseViewController {
     private let router = BaseRouter()
 
     // MARK: Init
-    init(category: String, step: Int) {
+    init(category: String, step: Int, layerImage: UIImage) {
         self.category = category
         self.step = step
+        self.layerImage = layerImage
+
         super.init(nibName: nil, bundle: nil)
+
+        setOverlayView()
+
     }
 
     required init?(coder: NSCoder) {
@@ -61,6 +67,10 @@ final class CameraViewController: BaseViewController {
     }
 
     // MARK: Events
+    private func setOverlayView() {
+        overlayView.image = layerImage
+    }
+
     private func openCamera() {
         AVCaptureDevice.requestAccess(for: .video) { [weak self] isAuthorized in
             guard isAuthorized else {
@@ -78,10 +88,17 @@ final class CameraViewController: BaseViewController {
 
                 pickerController.view.addSubview(self!.overlayView)
 
-
-                self?.overlayView.snp.makeConstraints {
-                    $0.center.equalToSuperview()
-                    $0.width.height.equalTo(100)
+                if(self?.category == "koreanMelon"){
+                    self?.overlayView.snp.makeConstraints {
+                        $0.center.equalToSuperview()
+                        $0.width.equalTo(200)
+                        $0.height.equalTo(250)
+                    }
+                }else{
+                    self?.overlayView.snp.makeConstraints {
+                        $0.center.equalToSuperview()
+                        $0.width.height.equalTo(300)
+                    }
                 }
 
                 self?.overlayView.isHidden = false
