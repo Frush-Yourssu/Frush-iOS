@@ -11,6 +11,9 @@ import Moya
 
 final class CameraViewController: BaseViewController {
 
+    let category: String
+    let step: Int
+
     // MARK: UI Components
     private let backButton = BaseButton().then {
         $0.setImage(FrushButton.backButton, for: .normal)
@@ -26,6 +29,16 @@ final class CameraViewController: BaseViewController {
     // MARK: Environment
     private let router = BaseRouter()
 
+    // MARK: Init
+    init(category: String, step: Int) {
+        self.category = category
+        self.step = step
+        super.init(nibName: nil, bundle: nil)
+    }
+
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
 
     // MARK: Life Cycle
     override func viewDidLoad() {
@@ -119,12 +132,61 @@ extension CameraViewController: UINavigationControllerDelegate, UIImagePickerCon
             return
         }
 
-        let encodedImage = image.base64
-        postFruit(fruit: "WATER_MELON",
-                  fruitPart: "WATER_MELON_CIRCULAR",
-                  image: encodedImage)
+//        let encodedImage = image.base64
+//        postFruit(fruit: "WATER_MELON",
+//                  fruitPart: "WATER_MELON_CIRCULAR",
+//                  image: encodedImage)
+        picker.dismiss(animated: true, completion: nil)
 
-        router.presentSecondStepViewController()
+        switch category {
+        case "waterMelon":
+            switch step {
+            case 1:
+                router.presentSecondStepViewController(
+                    guideText: "동그란 수박이 맛있다!",
+                    frushImage: FrushImage.waterMelonStep2)
+            case 2:
+                router.presentThirdStepViewController(
+                    guideText: "줄무늬가 뚜렷한 수박이 맛있다!",
+                    frushImage: FrushImage.waterMelonStep3)
+            case 3:
+                router.presentLoadingViewController()
+            default:
+                return
+            }
+        case "koreanMelon":
+            switch step {
+            case 1:
+                router.presentSecondStepViewController(
+                    guideText: "타원형 참외가 맛있다!",
+                    frushImage: FrushImage.koreanMelonStep2)
+            case 2:
+                router.presentThirdStepViewController(
+                    guideText: "상처가 없는 참외가 맛있다!",
+                    frushImage: FrushImage.koreanMelonStep3)
+            case 3:
+                router.presentLoadingViewController()
+            default:
+                return
+            }
+        case "peach":
+            switch step {
+            case 1:
+                router.presentSecondStepViewController(
+                    guideText: "복숭아 골이 선명하고\n좌우 대칭이어야 맛있다!",
+                    frushImage: FrushImage.peachStep2)
+            case 2:
+                router.presentThirdStepViewController(
+                    guideText: "상처가 없는 복숭아가 맛있다!",
+                    frushImage: FrushImage.peachStep3)
+            case 3:
+                router.presentLoadingViewController()
+            default:
+                return
+            }
+        default:
+            return
+        }
     }
 }
 

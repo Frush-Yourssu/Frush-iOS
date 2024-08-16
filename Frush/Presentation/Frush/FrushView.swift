@@ -1,22 +1,26 @@
 //
-//  WaterMelonView.swift
+//  FrushView.swift
 //  Frush
 //
-//  Created by 박지윤 on 8/16/24.
+//  Created by 박지윤 on 8/17/24.
 //
 
 import UIKit
 
-final class WaterMelonView: BaseView {
+final class FrushView: BaseView {
+
+    // MARK: Init
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+    }
+
+    required init?(coder: NSCoder) {
+        super.init(coder: coder)
+    }
 
     // MARK: UI Components
-    private let guideLabel = UILabel().then {
-        $0.setDefaultLabel("맛있는 수박을 고르러 가볼까요?")
-    }
-
-    private let waterMelonImageView = UIImageView().then {
-        $0.image = FrushImage.waterMelon
-    }
+    private let guideLabel = UILabel()
+    private let frushImageView = UIImageView()
 
     private let startButton = BaseButton().then {
         $0.setDefaultButton("시작하기")
@@ -28,7 +32,7 @@ final class WaterMelonView: BaseView {
     // MARK: Configuration
     override func configureSubviews() {
         addSubview(guideLabel)
-        addSubview(waterMelonImageView)
+        addSubview(frushImageView)
         addSubview(startButton)
 
         startButton.addTarget(self, action: #selector(handleStartButtonEvent), for: .touchUpInside)
@@ -41,7 +45,7 @@ final class WaterMelonView: BaseView {
             $0.centerX.equalToSuperview()
         }
 
-        waterMelonImageView.snp.makeConstraints {
+        frushImageView.snp.makeConstraints {
             $0.top.equalTo(guideLabel.snp.bottom).offset(36)
             $0.centerX.equalToSuperview()
             $0.height.width.equalTo(300)
@@ -56,5 +60,10 @@ final class WaterMelonView: BaseView {
     // MARK: Event
     @objc private func handleStartButtonEvent() {
         tapStartButton?()
+    }
+
+    func setData(guideText: String, frushImage: UIImage) {
+        guideLabel.setDefaultLabel(guideText)
+        frushImageView.image = frushImage
     }
 }

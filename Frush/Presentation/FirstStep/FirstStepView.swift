@@ -9,14 +9,22 @@ import UIKit
 
 final class FirstStepView: BaseView {
 
+    // MARK: Init
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+    }
+
+    required init?(coder: NSCoder) {
+        super.init(coder: coder)
+    }
+
     // MARK: UI Components
     private let progressBarImageView = UIImageView().then {
         $0.image = FrushImage.firstProgressBar
     }
 
-    private let guideLabel = UILabel().then {
-        $0.setDefaultLabel("배꼽이 작을수록 맛있다!")
-    }
+    private let guideLabel = UILabel()
+    private let frushImageView = UIImageView()
 
     private let cameraButton = BaseButton().then {
         $0.setDefaultButton("사진찍기")
@@ -29,6 +37,7 @@ final class FirstStepView: BaseView {
     override func configureSubviews() {
         addSubview(progressBarImageView)
         addSubview(guideLabel)
+        addSubview(frushImageView)
         addSubview(cameraButton)
 
         cameraButton.addTarget(self, action: #selector(handleCameraButtonEvent), for: .touchUpInside)
@@ -46,6 +55,12 @@ final class FirstStepView: BaseView {
             $0.centerX.equalToSuperview()
         }
 
+        frushImageView.snp.makeConstraints {
+            $0.top.equalTo(guideLabel.snp.bottom).offset(53)
+            $0.centerX.equalToSuperview()
+            $0.height.width.equalTo(343)
+        }
+
         cameraButton.snp.makeConstraints {
             $0.bottom.equalTo(safeAreaLayoutGuide).inset(34)
             $0.width.equalToSuperview()
@@ -55,5 +70,10 @@ final class FirstStepView: BaseView {
     // MARK: Event
     @objc private func handleCameraButtonEvent() {
         tapCameraButton?()
+    }
+
+    func setData(guideText: String, frushImage: UIImage) {
+        guideLabel.setDefaultLabel(guideText)
+        frushImageView.image = frushImage
     }
 }

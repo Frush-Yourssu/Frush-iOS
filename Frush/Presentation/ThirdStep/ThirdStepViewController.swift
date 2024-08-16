@@ -9,12 +9,27 @@ import UIKit
 
 final class ThirdStepViewController: BaseViewController {
 
+    let guideText: String
+    let frushImage: UIImage
+
     // MARK: UI Components
     private let backButton = BaseButton().then {
         $0.setImage(FrushButton.backButton, for: .normal)
     }
 
     private let thirdStepView = ThirdStepView()
+
+    // MARK: Init
+    init(guideText: String, frushImage: UIImage) {
+        self.guideText = guideText
+        self.frushImage = frushImage
+        super.init(nibName: nil, bundle: nil)
+        setFrushView()
+    }
+
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
 
     // MARK: Environment
     private let router = BaseRouter()
@@ -35,6 +50,21 @@ final class ThirdStepViewController: BaseViewController {
             guard let self else { return }
             router.dismissViewController()
         }
+
+        thirdStepView.tapCameraButton = { [weak self] in
+            guard let self else { return }
+            print("3rewafa")
+            switch frushImage {
+            case FrushImage.waterMelonStep3:
+                router.presentCameraViewController(category: "waterMelon", step: 3)
+            case FrushImage.koreanMelonStep3:
+                router.presentCameraViewController(category: "koreanMelon", step: 3)
+            case FrushImage.peachStep3:
+                router.presentCameraViewController(category: "peach", step: 3)
+            default:
+                return
+            }
+        }
     }
 
     // MARK: Layout
@@ -49,5 +79,9 @@ final class ThirdStepViewController: BaseViewController {
     private func setNavigationItem() {
         navigationItem.titleView = UIImageView(image: FrushImage.frushLogo)
         navigationItem.leftBarButtonItem = UIBarButtonItem(customView: backButton)
+    }
+
+    private func setFrushView() {
+        thirdStepView.setData(guideText: guideText, frushImage: frushImage)
     }
 }

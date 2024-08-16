@@ -35,17 +35,26 @@ final class MainViewController: BaseViewController {
 
         mainView.tapWaterMelonButton = { [weak self] in
             guard let self else { return }
-            router.presentWaterMelonViewController()
+            router.presentFrushViewController(
+                guideText: "맛있는 수박을 고르러 가볼까요?",
+                frushImage: FrushImage.waterMelon
+            )
         }
 
         mainView.tapKoreanMelonButton = { [weak self] in
             guard let self else { return }
-            router.presentKoreanMelonViewController()
+            router.presentFrushViewController(
+                guideText: "맛있는 참외를 고르러 가볼까요?",
+                frushImage: FrushImage.koreanMelon
+            )
         }
 
         mainView.tapPeachButton = { [weak self] in
             guard let self else { return }
-            router.presentPeachViewController()
+            router.presentFrushViewController(
+                guideText: "맛있는 복숭아를 고르러 가볼까요?",
+                frushImage: FrushImage.peach
+            )
         }
     }
 
