@@ -13,8 +13,4 @@ extension UILabel {
         textColor = .black
         font = UIFont(name: "GmarketSansTTFBold", size: 20)
     }
-
-    func setLabel() {
-        
-    }
 }

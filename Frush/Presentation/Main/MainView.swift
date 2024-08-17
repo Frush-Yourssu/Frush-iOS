@@ -25,12 +25,12 @@ final class MainView: BaseView {
 
     private var buttonConfiguration = BaseButton.Configuration.plain()
     private let waterMelonButton = BaseButton()
-    private let koreanMelonButton = BaseButton()
+    private let orientalMelonButton = BaseButton()
     private let peachButton = BaseButton()
 
     // MARK: Properties
     var tapWaterMelonButton: (() -> Void)?
-    var tapKoreanMelonButton: (() -> Void)?
+    var tapOrientalMelonButton: (() -> Void)?
     var tapPeachButton: (() -> Void)?
 
     // MARK: Configuration
@@ -41,11 +41,11 @@ final class MainView: BaseView {
         addSubview(frushButtonStackView)
 
         frushButtonStackView.addArrangedSubviews(waterMelonButton,
-                                                 koreanMelonButton,
+                                                 orientalMelonButton,
                                                  peachButton)
 
         waterMelonButton.addTarget(self, action: #selector(handleWaterMelonButtonEvent), for: .touchUpInside)
-        koreanMelonButton.addTarget(self, action: #selector(handleKoreanMelonButtonEvent), for: .touchUpInside)
+        orientalMelonButton.addTarget(self, action: #selector(handleOrientalMelonButtonEvent), for: .touchUpInside)
         peachButton.addTarget(self, action: #selector(handlePeachButtonEvent), for: .touchUpInside)
     }
 
@@ -68,8 +68,8 @@ final class MainView: BaseView {
         tapWaterMelonButton?()
     }
 
-    @objc private func handleKoreanMelonButtonEvent() {
-        tapKoreanMelonButton?()
+    @objc private func handleOrientalMelonButtonEvent() {
+        tapOrientalMelonButton?()
     }
 
     @objc private func handlePeachButtonEvent() {
@@ -97,7 +97,7 @@ extension MainView {
 
     func setButtonConfiguration() {
         configureButton(waterMelonButton, title: "수박", image: FrushImage.waterMelon)
-        configureButton(koreanMelonButton, title: "참외", image: FrushImage.koreanMelon)
+        configureButton(orientalMelonButton, title: "참외", image: FrushImage.orientalMelon)
         configureButton(peachButton, title: "복숭아", image: FrushImage.peach)
     }
 }

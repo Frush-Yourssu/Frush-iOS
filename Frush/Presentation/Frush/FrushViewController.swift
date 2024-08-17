@@ -58,10 +58,10 @@ final class FrushViewController: BaseViewController {
                 router.presentFirstStepViewController(
                     guideText: "배꼽이 작을수록 맛있다!",
                     frushImage: FrushImage.waterMelonStep1)
-            case FrushImage.koreanMelon:
+            case FrushImage.orientalMelon:
                 router.presentFirstStepViewController(
                     guideText: "배꼽이 작을수록 맛있다!",
-                    frushImage: FrushImage.koreanMelonStep1)
+                    frushImage: FrushImage.orientalMelonStep1)
             case FrushImage.peach:
                 router.presentFirstStepViewController(
                     guideText: "붉은 색이 도는 것이 맛있다!",

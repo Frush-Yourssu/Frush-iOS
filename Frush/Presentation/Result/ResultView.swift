@@ -111,25 +111,25 @@ final class ResultView: BaseView {
             default:
                 return
             }
-        case "koreanMelon":
+        case "orientalMelon":
             resultLabel.text = "내가 고른 수박은?"
             switch average {
             case 0...25:
-                frushImageView.image = FrushImage.koreanMelon1
-                frushTitleLabel.text = ResultData.koreanMelonResultList[0].title
-                descriptLabel.text = ResultData.koreanMelonResultList[0].description
+                frushImageView.image = FrushImage.orientalMelon1
+                frushTitleLabel.text = ResultData.orientalMelonResultList[0].title
+                descriptLabel.text = ResultData.orientalMelonResultList[0].description
             case 26...50:
-                frushImageView.image = FrushImage.koreanMelon2
-                frushTitleLabel.text = ResultData.koreanMelonResultList[1].title
-                descriptLabel.text = ResultData.koreanMelonResultList[1].description
+                frushImageView.image = FrushImage.orientalMelon2
+                frushTitleLabel.text = ResultData.orientalMelonResultList[1].title
+                descriptLabel.text = ResultData.orientalMelonResultList[1].description
             case 51...75:
-                frushImageView.image = FrushImage.koreanMelon3
-                frushTitleLabel.text = ResultData.koreanMelonResultList[2].title
-                descriptLabel.text = ResultData.koreanMelonResultList[2].description
+                frushImageView.image = FrushImage.orientalMelon3
+                frushTitleLabel.text = ResultData.orientalMelonResultList[2].title
+                descriptLabel.text = ResultData.orientalMelonResultList[2].description
             case 76...100:
-                frushImageView.image = FrushImage.koreanMelon4
-                frushTitleLabel.text = ResultData.koreanMelonResultList[3].title
-                descriptLabel.text = ResultData.koreanMelonResultList[3].description
+                frushImageView.image = FrushImage.orientalMelon4
+                frushTitleLabel.text = ResultData.orientalMelonResultList[3].title
+                descriptLabel.text = ResultData.orientalMelonResultList[3].description
             default:
                 return
             }

@@ -56,8 +56,8 @@ final class FirstStepViewController: BaseViewController {
             switch frushImage {
             case FrushImage.waterMelonStep1:
                 router.presentCameraViewController(category: "waterMelon", step: 1, layerImage: FrushImage.waterMelonLayer1)
-            case FrushImage.koreanMelonStep1:
-                router.presentCameraViewController(category: "koreanMelon", step: 1, layerImage: FrushImage.koreanMelonLayer1)
+            case FrushImage.orientalMelonStep1:
+                router.presentCameraViewController(category: "orientalMelon", step: 1, layerImage: FrushImage.orientalMelonLayer1)
             case FrushImage.peachStep1:
                 router.presentCameraViewController(category: "peach", step: 1, layerImage: FrushImage.peachLayer1)
             default:

@@ -69,7 +69,7 @@ final class ResultDetailView: UIView {
                 index += 1
             case "ORIENTAL_MELON":
                 let resultContentView = ResultContentView(
-                    category: WaterMelonData.koreanMelonDataList[index].category,
+                    category: WaterMelonData.orientalMelonDataList[index].category,
                     similarity: similarity)
 
                 resultStackView.addArrangedSubview(resultContentView)

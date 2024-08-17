@@ -211,8 +211,8 @@
 				95778B0B2C6FB36A004BB616 /* UILabel+Extension.swift */,
 				953651512C6F885D00F58D13 /* UIStackView+Extension.swift */,
 				953651402C6F763700F58D13 /* UIButton+Extension.swift */,
-				953651372C6F73F900F58D13 /* Literal */,
 				95778B262C6FD8D4004BB616 /* UIImage+Extension.swift */,
+				953651372C6F73F900F58D13 /* Literal */,
 			);
 			path = Extension;
 			sourceTree = "<group>";

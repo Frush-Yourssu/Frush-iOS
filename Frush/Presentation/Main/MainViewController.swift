@@ -41,11 +41,11 @@ final class MainViewController: BaseViewController {
             )
         }
 
-        mainView.tapKoreanMelonButton = { [weak self] in
+        mainView.tapOrientalMelonButton = { [weak self] in
             guard let self else { return }
             router.presentFrushViewController(
                 guideText: "맛있는 참외를 고르러 가볼까요?",
-                frushImage: FrushImage.koreanMelon
+                frushImage: FrushImage.orientalMelon
             )
         }
 

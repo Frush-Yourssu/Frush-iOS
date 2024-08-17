@@ -15,7 +15,7 @@ final class CameraViewController: BaseViewController {
     let step: Int
     let layerImage: UIImage
     let waterMelonDataList = FruitData.waterMelonDataList
-    let koreanMelonDataList = FruitData.koreanMelonDataList
+    let orientalMelonDataList = FruitData.orientalMelonDataList
     let peachDataList = FruitData.peachDataList
     var responseList: FrushResponse?
 
@@ -98,7 +98,7 @@ final class CameraViewController: BaseViewController {
                 pickerController.view.addSubview(self!.guideLabel)
 
 
-                if(self?.category == "koreanMelon"){
+                if(self?.category == "orientalMelon"){
                     self?.overlayView.snp.makeConstraints {
                         $0.center.equalToSuperview()
                         $0.width.equalTo(200)
@@ -186,19 +186,19 @@ extension CameraViewController: UINavigationControllerDelegate, UIImagePickerCon
             default:
                 return
             }
-        case "koreanMelon":
+        case "orientalMelon":
             switch step {
             case 1:
-                postFruit(fruit: koreanMelonDataList[0].fruit,
-                          fruitPart: koreanMelonDataList[0].fruitPart,
+                postFruit(fruit: orientalMelonDataList[0].fruit,
+                          fruitPart: orientalMelonDataList[0].fruitPart,
                           image: encodedImage)
             case 2:
-                postFruit(fruit: koreanMelonDataList[1].fruit,
-                          fruitPart: koreanMelonDataList[1].fruitPart,
+                postFruit(fruit: orientalMelonDataList[1].fruit,
+                          fruitPart: orientalMelonDataList[1].fruitPart,
                           image: encodedImage)
             case 3:
-                postFruit(fruit: koreanMelonDataList[2].fruit,
-                          fruitPart: koreanMelonDataList[2].fruitPart,
+                postFruit(fruit: orientalMelonDataList[2].fruit,
+                          fruitPart: orientalMelonDataList[2].fruitPart,
                           image: encodedImage)
             default:
                 return
@@ -249,16 +249,16 @@ extension CameraViewController {
             default:
                 return
             }
-        case "koreanMelon":
+        case "orientalMelon":
             switch step {
             case 1:
                 router.presentSecondStepViewController(
                     guideText: "타원형 참외가 맛있다!",
-                    frushImage: FrushImage.koreanMelonStep2)
+                    frushImage: FrushImage.orientalMelonStep2)
             case 2:
                 router.presentThirdStepViewController(
                     guideText: "상처가 없는 참외가 맛있다!",
-                    frushImage: FrushImage.koreanMelonStep3)
+                    frushImage: FrushImage.orientalMelonStep3)
             case 3:
                 router.presentLoadingViewController(category: category)
             default:

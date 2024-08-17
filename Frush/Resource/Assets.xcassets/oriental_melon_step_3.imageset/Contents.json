@@ -1,15 +1,16 @@
 {
   "images" : [
     {
-      "filename" : "Ellipse .png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "oriental_melon_step_3@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
+      "filename" : "oriental_melon_step_3@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

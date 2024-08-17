@@ -19,7 +19,7 @@ extension WaterMelonData {
         WaterMelonData(category: "줄무늬", similarity: 70)
     ]
 
-    static let koreanMelonDataList = [
+    static let orientalMelonDataList = [
         WaterMelonData(category: "배꼽", similarity: 30),
         WaterMelonData(category: "타원형", similarity: 50),
         WaterMelonData(category: "상처", similarity: 70)
@@ -44,7 +44,7 @@ extension FruitData {
         FruitData(fruit: "WATER_MELON", fruitPart: "WATER_MELON_NAVEL")
     ]
 
-    static let koreanMelonDataList = [
+    static let orientalMelonDataList = [
         FruitData(fruit: "ORIENTAL_MELON", fruitPart: "ORIENTAL_MELON_NAVEL"),
         FruitData(fruit: "ORIENTAL_MELON", fruitPart: "ORIENTAL_MELON_OVAL"),
         FruitData(fruit: "ORIENTAL_MELON", fruitPart: "ORIENTAL_MELON_INJURY")

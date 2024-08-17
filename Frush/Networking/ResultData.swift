@@ -20,7 +20,7 @@ extension ResultData {
         ResultData(title: "진짜 맛있는 수박", description: "이 수박이면 더운 여름도 견딜 수\n있을 거에요. 지금 바로 드셔보세요!")
     ]
 
-    static let koreanMelonResultList = [
+    static let orientalMelonResultList = [
         ResultData(title: "맛없는 참외", description: "달콤함은 없고, 그냥 물 같은 느낌이에요. ㅠㅠ"),
         ResultData(title: "조금 아쉬운 참외", description: "참외의 향은 있지만, 단맛이 부족해요."),
         ResultData(title: "괜찮은 참외", description: "좋은 선택!\n아삭하고 달달한 맛이 좋아요."),
