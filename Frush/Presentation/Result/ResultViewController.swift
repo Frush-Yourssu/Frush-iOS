@@ -46,7 +46,7 @@ final class ResultViewController: BaseViewController {
 
         dismissButton.tap = { [weak self] in
             guard let self else { return }
-            router.dismissViewController()
+            router.popToRootViewController()
         }
     }
 

@@ -41,7 +41,6 @@
 		953651502C6F7B0900F58D13 /* ThirdStepViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9536514F2C6F7B0900F58D13 /* ThirdStepViewController.swift */; };
 		953651522C6F885D00F58D13 /* UIStackView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953651512C6F885D00F58D13 /* UIStackView+Extension.swift */; };
 		9536515E2C6F9BBC00F58D13 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 9536515D2C6F9BBC00F58D13 /* SnapKit */; };
-		95778AFD2C6FB0A7004BB616 /* DummyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95778AFC2C6FB0A7004BB616 /* DummyData.swift */; };
 		95778AFF2C6FB0D0004BB616 /* ResultContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95778AFE2C6FB0D0004BB616 /* ResultContentView.swift */; };
 		95778B012C6FB0E3004BB616 /* ResultDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95778B002C6FB0E3004BB616 /* ResultDetailView.swift */; };
 		95778B072C6FB2A7004BB616 /* GmarketSansTTFBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 95778B042C6FB2A7004BB616 /* GmarketSansTTFBold.ttf */; };
@@ -62,6 +61,11 @@
 		95778B2F2C6FE3BB004BB616 /* FrushView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95778B2E2C6FE3BB004BB616 /* FrushView.swift */; };
 		95778B312C6FE3C3004BB616 /* FrushViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95778B302C6FE3C3004BB616 /* FrushViewController.swift */; };
 		95778B372C700527004BB616 /* ResultData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95778B362C700527004BB616 /* ResultData.swift */; };
+		959092372C709D31009A1800 /* Frush.swift in Sources */ = {isa = PBXBuildFile; fileRef = 959092362C709D31009A1800 /* Frush.swift */; };
+		9590923B2C70A102009A1800 /* StepData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9590923A2C70A102009A1800 /* StepData.swift */; };
+		9590923F2C70A3AF009A1800 /* FruitPartData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9590923E2C70A3AF009A1800 /* FruitPartData.swift */; };
+		959092432C70B2F5009A1800 /* FruitNameData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 959092422C70B2F5009A1800 /* FruitNameData.swift */; };
+		959092452C70E041009A1800 /* FrushData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 959092442C70E041009A1800 /* FrushData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -95,7 +99,6 @@
 		9536514D2C6F7B0000F58D13 /* ThirdStepView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdStepView.swift; sourceTree = "<group>"; };
 		9536514F2C6F7B0900F58D13 /* ThirdStepViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdStepViewController.swift; sourceTree = "<group>"; };
 		953651512C6F885D00F58D13 /* UIStackView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+Extension.swift"; sourceTree = "<group>"; };
-		95778AFC2C6FB0A7004BB616 /* DummyData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyData.swift; sourceTree = "<group>"; };
 		95778AFE2C6FB0D0004BB616 /* ResultContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultContentView.swift; sourceTree = "<group>"; };
 		95778B002C6FB0E3004BB616 /* ResultDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultDetailView.swift; sourceTree = "<group>"; };
 		95778B042C6FB2A7004BB616 /* GmarketSansTTFBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = GmarketSansTTFBold.ttf; sourceTree = "<group>"; };
@@ -115,6 +118,11 @@
 		95778B2E2C6FE3BB004BB616 /* FrushView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrushView.swift; sourceTree = "<group>"; };
 		95778B302C6FE3C3004BB616 /* FrushViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrushViewController.swift; sourceTree = "<group>"; };
 		95778B362C700527004BB616 /* ResultData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultData.swift; sourceTree = "<group>"; };
+		959092362C709D31009A1800 /* Frush.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Frush.swift; sourceTree = "<group>"; };
+		9590923A2C70A102009A1800 /* StepData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepData.swift; sourceTree = "<group>"; };
+		9590923E2C70A3AF009A1800 /* FruitPartData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitPartData.swift; sourceTree = "<group>"; };
+		959092422C70B2F5009A1800 /* FruitNameData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitNameData.swift; sourceTree = "<group>"; };
+		959092442C70E041009A1800 /* FrushData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrushData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +166,7 @@
 				9536510C2C6F6A9D00F58D13 /* Resource */,
 				9536510D2C6F6AAA00F58D13 /* Extension */,
 				9536510F2C6F6ABE00F58D13 /* Networking */,
+				959092352C709CEA009A1800 /* Data */,
 				9536510E2C6F6AB500F58D13 /* Presentation */,
 				9536510A2C6F6A0D00F58D13 /* App */,
 				953650E42C6F625100F58D13 /* LaunchScreen.storyboard */,
@@ -238,13 +247,11 @@
 			isa = PBXGroup;
 			children = (
 				95778B192C6FBFCB004BB616 /* Frush */,
-				95778AFC2C6FB0A7004BB616 /* DummyData.swift */,
 				95778B0D2C6FBF52004BB616 /* MoyaLoggerPlugin.swift */,
 				95778B0F2C6FBF68004BB616 /* NetworkResult.swift */,
 				95778B112C6FBF85004BB616 /* TargetType+Extension.swift */,
 				95778B152C6FBFA4004BB616 /* NetworkService.swift */,
 				95778B172C6FBFB8004BB616 /* ErrorResponse.swift */,
-				95778B362C700527004BB616 /* ResultData.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -351,6 +358,19 @@
 			path = Frush;
 			sourceTree = "<group>";
 		};
+		959092352C709CEA009A1800 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				959092422C70B2F5009A1800 /* FruitNameData.swift */,
+				9590923E2C70A3AF009A1800 /* FruitPartData.swift */,
+				9590923A2C70A102009A1800 /* StepData.swift */,
+				95778B362C700527004BB616 /* ResultData.swift */,
+				959092362C709D31009A1800 /* Frush.swift */,
+				959092442C70E041009A1800 /* FrushData.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -455,10 +475,10 @@
 				953651392C6F740100F58D13 /* ImageLiteral.swift in Sources */,
 				953651322C6F6E3700F58D13 /* LoadingView.swift in Sources */,
 				95778B2F2C6FE3BB004BB616 /* FrushView.swift in Sources */,
-				95778AFD2C6FB0A7004BB616 /* DummyData.swift in Sources */,
 				953650F42C6F696200F58D13 /* BaseView.swift in Sources */,
 				9536513F2C6F762F00F58D13 /* UIColor+Extension.swift in Sources */,
 				953651502C6F7B0900F58D13 /* ThirdStepViewController.swift in Sources */,
+				959092372C709D31009A1800 /* Frush.swift in Sources */,
 				953651522C6F885D00F58D13 /* UIStackView+Extension.swift in Sources */,
 				953650DA2C6F624F00F58D13 /* AppDelegate.swift in Sources */,
 				953651482C6F7AED00F58D13 /* FirstStepViewController.swift in Sources */,
@@ -466,9 +486,12 @@
 				95778B122C6FBF85004BB616 /* TargetType+Extension.swift in Sources */,
 				95778B012C6FB0E3004BB616 /* ResultDetailView.swift in Sources */,
 				95778B1B2C6FBFD3004BB616 /* FrushAPI.swift in Sources */,
+				9590923B2C70A102009A1800 /* StepData.swift in Sources */,
 				95778B0C2C6FB36A004BB616 /* UILabel+Extension.swift in Sources */,
 				953650F62C6F696E00F58D13 /* BaseButton.swift in Sources */,
 				953651412C6F763700F58D13 /* UIButton+Extension.swift in Sources */,
+				959092432C70B2F5009A1800 /* FruitNameData.swift in Sources */,
+				9590923F2C70A3AF009A1800 /* FruitPartData.swift in Sources */,
 				953650DC2C6F624F00F58D13 /* SceneDelegate.swift in Sources */,
 				9536514A2C6F7AF300F58D13 /* SecondStepView.swift in Sources */,
 				953651462C6F7AE600F58D13 /* FirstStepView.swift in Sources */,
@@ -479,6 +502,7 @@
 				9536512F2C6F6E0D00F58D13 /* ResultViewController.swift in Sources */,
 				953651112C6F6AF900F58D13 /* BaseRouter.swift in Sources */,
 				9536514C2C6F7AFA00F58D13 /* SecondStepViewController.swift in Sources */,
+				959092452C70E041009A1800 /* FrushData.swift in Sources */,
 				953651192C6F6CA600F58D13 /* MainViewController.swift in Sources */,
 				953651342C6F6E3F00F58D13 /* LoadingViewController.swift in Sources */,
 				9536512A2C6F6DDA00F58D13 /* CameraViewController.swift in Sources */,

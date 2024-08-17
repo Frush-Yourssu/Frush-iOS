@@ -20,7 +20,7 @@ final class ResultDetailView: UIView {
     // MARK: Init
     init() {
         super.init(frame: .zero)
-
+        index = 0
         configureSubviews()
         makeConstraints()
     }
@@ -53,30 +53,27 @@ final class ResultDetailView: UIView {
 
     func setData(frushResponseDataList: [FrushResponse]) {
         for frushResponseData in frushResponseDataList {
-
             let fruit = frushResponseData.fruit
             let similarity = frushResponseData.similarity
 
             switch fruit {
-            case "WATER_MELON":
-                print("dfsaadfs")
-                print(index)
+            case Frush.WATER_MELON.fruitName.eng:
                 let resultContentView = ResultContentView(
-                    category: WaterMelonData.waterMelonDataList[index].category,
+                    category: Frush.WATER_MELON.fruitPart[index].kor,
                     similarity: similarity)
 
                 resultStackView.addArrangedSubview(resultContentView)
                 index += 1
-            case "ORIENTAL_MELON":
+            case Frush.ORIENTAL_MELON.fruitName.eng:
                 let resultContentView = ResultContentView(
-                    category: WaterMelonData.orientalMelonDataList[index].category,
+                    category: Frush.ORIENTAL_MELON.fruitPart[index].kor,
                     similarity: similarity)
 
                 resultStackView.addArrangedSubview(resultContentView)
                 index += 1
-            case "PEACH":
+            case Frush.PEACH.fruitName.eng:
                 let resultContentView = ResultContentView(
-                    category: WaterMelonData.peachMelonDataList[index].category,
+                    category: Frush.PEACH.fruitPart[index].kor,
                     similarity: similarity)
 
                 resultStackView.addArrangedSubview(resultContentView)

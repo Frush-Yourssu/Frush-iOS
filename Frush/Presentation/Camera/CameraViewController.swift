@@ -14,9 +14,6 @@ final class CameraViewController: BaseViewController {
     let category: String
     let step: Int
     let layerImage: UIImage
-    let waterMelonDataList = FruitData.waterMelonDataList
-    let orientalMelonDataList = FruitData.orientalMelonDataList
-    let peachDataList = FruitData.peachDataList
     var responseList: FrushResponse?
 
     // MARK: UI Components
@@ -24,12 +21,9 @@ final class CameraViewController: BaseViewController {
         $0.setImage(FrushButton.backButton, for: .normal)
     }
 
-    private let overlayView: UIImageView = {
-        let overlayView = UIImageView()
-//        overlayView.image = self.layerImage
-        overlayView.isHidden = true
-        return overlayView
-    }()
+    private let overlayView = UIImageView().then {
+        $0.isHidden = true
+    }
 
     private let guideLabel = UILabel().then {
         $0.setDefaultLabel("가이드에 맞춰 촬영해주세요!")
@@ -47,7 +41,6 @@ final class CameraViewController: BaseViewController {
         super.init(nibName: nil, bundle: nil)
 
         setOverlayView()
-
     }
 
     required init?(coder: NSCoder) {
@@ -93,18 +86,16 @@ final class CameraViewController: BaseViewController {
                 pickerController.mediaTypes = ["public.image"]
                 pickerController.delegate = self
 
-
                 pickerController.view.addSubview(self!.overlayView)
                 pickerController.view.addSubview(self!.guideLabel)
 
-
-                if(self?.category == "orientalMelon"){
+                if (self?.category == "orientalMelon") {
                     self?.overlayView.snp.makeConstraints {
                         $0.center.equalToSuperview()
                         $0.width.equalTo(200)
                         $0.height.equalTo(250)
                     }
-                }else{
+                } else {
                     self?.overlayView.snp.makeConstraints {
                         $0.center.equalToSuperview()
                         $0.width.height.equalTo(300)
@@ -118,7 +109,6 @@ final class CameraViewController: BaseViewController {
 
                 self?.overlayView.isHidden = false
                 self?.present(pickerController, animated: true)
-
             }
         }
     }
@@ -169,57 +159,18 @@ extension CameraViewController: UINavigationControllerDelegate, UIImagePickerCon
         picker.dismiss(animated: true, completion: nil)
 
         switch category {
-        case "waterMelon":
-            switch step {
-            case 1:
-                postFruit(fruit: waterMelonDataList[0].fruit,
-                          fruitPart: waterMelonDataList[0].fruitPart,
-                          image: encodedImage)
-            case 2:
-                postFruit(fruit: waterMelonDataList[1].fruit,
-                          fruitPart: waterMelonDataList[1].fruitPart,
-                          image: encodedImage)
-            case 3:
-                postFruit(fruit: waterMelonDataList[2].fruit,
-                          fruitPart: waterMelonDataList[2].fruitPart,
-                          image: encodedImage)
-            default:
-                return
-            }
-        case "orientalMelon":
-            switch step {
-            case 1:
-                postFruit(fruit: orientalMelonDataList[0].fruit,
-                          fruitPart: orientalMelonDataList[0].fruitPart,
-                          image: encodedImage)
-            case 2:
-                postFruit(fruit: orientalMelonDataList[1].fruit,
-                          fruitPart: orientalMelonDataList[1].fruitPart,
-                          image: encodedImage)
-            case 3:
-                postFruit(fruit: orientalMelonDataList[2].fruit,
-                          fruitPart: orientalMelonDataList[2].fruitPart,
-                          image: encodedImage)
-            default:
-                return
-            }
-        case "peach":
-            switch step {
-            case 1:
-                postFruit(fruit: peachDataList[0].fruit,
-                          fruitPart: peachDataList[0].fruitPart,
-                          image: encodedImage)
-            case 2:
-                postFruit(fruit: peachDataList[1].fruit,
-                          fruitPart: peachDataList[1].fruitPart,
-                          image: encodedImage)
-            case 3:
-                postFruit(fruit: peachDataList[2].fruit,
-                          fruitPart: peachDataList[2].fruitPart,
-                          image: encodedImage)
-            default:
-                return
-            }
+        case Frush.WATER_MELON.fruitName.kor:
+            postFruit(fruit: Frush.WATER_MELON.fruitName.eng,
+                      fruitPart: Frush.WATER_MELON.fruitPart[step-1].eng,
+                      image: encodedImage)
+        case Frush.ORIENTAL_MELON.fruitName.kor:
+            postFruit(fruit: Frush.ORIENTAL_MELON.fruitName.eng,
+                      fruitPart: Frush.ORIENTAL_MELON.fruitPart[step-1].eng,
+                      image: encodedImage)
+        case Frush.PEACH.fruitName.kor:
+            postFruit(fruit: Frush.PEACH.fruitName.eng,
+                      fruitPart: Frush.PEACH.fruitPart[step-1].eng,
+                      image: encodedImage)
         default:
             return
         }
@@ -234,46 +185,52 @@ extension CameraViewController: UINavigationControllerDelegate, UIImagePickerCon
 extension CameraViewController {
     private func presentNextViewController() {
         switch category {
-        case "waterMelon":
+        case Frush.WATER_MELON.fruitName.kor:
             switch step {
             case 1:
-                router.presentSecondStepViewController(
-                    guideText: "동그란 수박이 맛있다!",
-                    frushImage: FrushImage.waterMelonStep2)
+                router.presentNextStepViewController(
+                    nextStepViewController: SecondStepViewController(
+                        guideText: Frush.WATER_MELON.fruitStep.step[step],
+                        frushImage: Frush.WATER_MELON.fruitStep.stepImage[step]))
             case 2:
-                router.presentThirdStepViewController(
-                    guideText: "줄무늬가 뚜렷한 수박이 맛있다!",
-                    frushImage: FrushImage.waterMelonStep3)
+                router.presentNextStepViewController(
+                    nextStepViewController: ThirdStepViewController(
+                        guideText: Frush.WATER_MELON.fruitStep.step[step],
+                        frushImage: Frush.WATER_MELON.fruitStep.stepImage[step]))
             case 3:
                 router.presentLoadingViewController(category: category)
             default:
                 return
             }
-        case "orientalMelon":
+        case Frush.ORIENTAL_MELON.fruitName.kor:
             switch step {
             case 1:
-                router.presentSecondStepViewController(
-                    guideText: "타원형 참외가 맛있다!",
-                    frushImage: FrushImage.orientalMelonStep2)
+                router.presentNextStepViewController(
+                    nextStepViewController: SecondStepViewController(
+                        guideText: Frush.ORIENTAL_MELON.fruitStep.step[step],
+                        frushImage: Frush.ORIENTAL_MELON.fruitStep.stepImage[step]))
             case 2:
-                router.presentThirdStepViewController(
-                    guideText: "상처가 없는 참외가 맛있다!",
-                    frushImage: FrushImage.orientalMelonStep3)
+                router.presentNextStepViewController(
+                    nextStepViewController: ThirdStepViewController(
+                        guideText: Frush.ORIENTAL_MELON.fruitStep.step[step],
+                        frushImage: Frush.ORIENTAL_MELON.fruitStep.stepImage[step]))
             case 3:
                 router.presentLoadingViewController(category: category)
             default:
                 return
             }
-        case "peach":
+        case Frush.PEACH.fruitName.kor:
             switch step {
             case 1:
-                router.presentSecondStepViewController(
-                    guideText: "복숭아 골이 선명하고\n좌우 대칭이어야 맛있다!",
-                    frushImage: FrushImage.peachStep2)
+                router.presentNextStepViewController(
+                    nextStepViewController: SecondStepViewController(
+                        guideText: Frush.PEACH.fruitStep.step[step],
+                        frushImage: Frush.PEACH.fruitStep.stepImage[step]))
             case 2:
-                router.presentThirdStepViewController(
-                    guideText: "상처가 없는 복숭아가 맛있다!",
-                    frushImage: FrushImage.peachStep3)
+                router.presentNextStepViewController(
+                    nextStepViewController: ThirdStepViewController(
+                        guideText: Frush.PEACH.fruitStep.step[step],
+                        frushImage: Frush.PEACH.fruitStep.stepImage[step]))
             case 3:
                 router.presentLoadingViewController(category: category)
             default:

@@ -55,17 +55,23 @@ final class FrushViewController: BaseViewController {
             guard let self else { return }
             switch frushImage {
             case FrushImage.waterMelon:
-                router.presentFirstStepViewController(
-                    guideText: "배꼽이 작을수록 맛있다!",
-                    frushImage: FrushImage.waterMelonStep1)
+                router.presentNextStepViewController(
+                    nextStepViewController: FirstStepViewController(
+                        guideText: Frush.WATER_MELON.fruitStep.step[0],
+                        frushImage: Frush.WATER_MELON.fruitStep.stepImage[0])
+                )
             case FrushImage.orientalMelon:
-                router.presentFirstStepViewController(
-                    guideText: "배꼽이 작을수록 맛있다!",
-                    frushImage: FrushImage.orientalMelonStep1)
+                router.presentNextStepViewController(
+                    nextStepViewController: FirstStepViewController(
+                        guideText: Frush.ORIENTAL_MELON.fruitStep.step[0],
+                        frushImage: Frush.ORIENTAL_MELON.fruitStep.stepImage[0])
+                )
             case FrushImage.peach:
-                router.presentFirstStepViewController(
-                    guideText: "붉은 색이 도는 것이 맛있다!",
-                    frushImage: FrushImage.peachStep1)
+                router.presentNextStepViewController(
+                    nextStepViewController: FirstStepViewController(
+                        guideText: Frush.PEACH.fruitStep.step[0],
+                        frushImage: Frush.PEACH.fruitStep.stepImage[0])
+                )
             default:
                 return
             }

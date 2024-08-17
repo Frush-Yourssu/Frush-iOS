@@ -23,19 +23,8 @@ final class BaseRouter {
         viewController?.navigationController?.pushViewController(frushViewController, animated: true)
     }
 
-    func presentFirstStepViewController(guideText: String, frushImage: UIImage) {
-        let firstStepViewController = FirstStepViewController(guideText: guideText, frushImage: frushImage)
-        viewController?.navigationController?.pushViewController(firstStepViewController, animated: true)
-    }
-
-    func presentSecondStepViewController(guideText: String, frushImage: UIImage) {
-        let secondStepViewController = SecondStepViewController(guideText: guideText, frushImage: frushImage)
-        viewController?.navigationController?.pushViewController(secondStepViewController, animated: true)
-    }
-
-    func presentThirdStepViewController(guideText: String, frushImage: UIImage) {
-        let thirdStepViewController = ThirdStepViewController(guideText: guideText, frushImage: frushImage)
-        viewController?.navigationController?.pushViewController(thirdStepViewController, animated: true)
+    func presentNextStepViewController(nextStepViewController: BaseViewController) {
+        viewController?.navigationController?.pushViewController(nextStepViewController, animated: true)
     }
 
     func presentCameraViewController(category: String, step: Int, layerImage: UIImage) {
@@ -54,6 +43,10 @@ final class BaseRouter {
     }
 
     func dismissViewController() {
+        viewController?.navigationController?.popViewController(animated: true)
+    }
+
+    func popToRootViewController() {
         viewController?.navigationController?.popToRootViewController(animated: true)
     }
 }

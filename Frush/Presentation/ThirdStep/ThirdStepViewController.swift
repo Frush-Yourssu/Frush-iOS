@@ -53,7 +53,6 @@ final class ThirdStepViewController: BaseViewController {
 
         thirdStepView.tapCameraButton = { [weak self] in
             guard let self else { return }
-            print("3rewafa")
             switch frushImage {
             case FrushImage.waterMelonStep3:
                 router.presentCameraViewController(category: "waterMelon", step: 3, layerImage: FrushImage.waterMelonLayer2)

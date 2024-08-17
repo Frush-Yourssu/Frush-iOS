@@ -32,7 +32,6 @@ final class ResultView: BaseView {
     private let resultDetailView = ResultDetailView()
 
     // MARK: Properties
-    let waterMelonDataList: [WaterMelonData] = WaterMelonData.waterMelonDataList
 
     // MARK: Configuration
     override func configureSubviews() {
